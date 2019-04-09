@@ -27,9 +27,9 @@ mainClassName = 'com.moventum.randomrouter.MainKt'
 
 dependencies {
     compile 'com.google.protobuf:protobuf-java:3.0.0'
-    compile 'io.grpc:grpc-stub:1.0.0-pre2'
-    compile 'io.grpc:grpc-protobuf:1.0.0-pre2'
     compile("io.grpc:grpc-netty:1.14.0")
+    compile("io.grpc:grpc-protobuf:1.14.0")
+    compile("io.grpc:grpc-stub:1.14.0")
     if (JavaVersion.current().isJava9Compatible()) {
         // Workaround for @javax.annotation.Generated
         // see: https://github.com/grpc/grpc-java/issues/3633
