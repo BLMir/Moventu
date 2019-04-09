@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'kotlin'
 apply plugin: 'com.google.protobuf'
 apply plugin: 'idea'
 apply plugin: 'application'
@@ -7,16 +8,23 @@ version '1.0-SNAPSHOT'
 
 repositories {
     maven { url "https://plugins.gradle.org/m2/" }
+    mavenCentral()
 }
 
 buildscript {
+    ext.kotlin_version = '1.3.21'
+    ext.kotlin_version = '1.3.10'
     repositories {
         maven { url "https://plugins.gradle.org/m2/" }
+        mavenCentral()
     }
     dependencies {
         classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.8'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
+
+mainClassName = 'com.moventum.randomrouter.MainKt'
 
 dependencies {
     compile 'com.google.protobuf:protobuf-java:3.0.0'
@@ -32,6 +40,7 @@ dependencies {
     protobuf files("protos/")
 
     testCompile 'junit:junit:4.12'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 
 protobuf {
@@ -56,4 +65,14 @@ protobuf {
 //            grpc { }
 //        }
 //    }
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
