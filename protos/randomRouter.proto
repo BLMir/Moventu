@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+service RandomRouter {
+    rpc route(RouteReq) returns (Route){
+
+    };
+}
+
+message RouteReq {
+    string name = 1;
+    string fromExpression = 2;
+}
+
+message Route {
+    string name = 1;
+    string expression =2;
+}
