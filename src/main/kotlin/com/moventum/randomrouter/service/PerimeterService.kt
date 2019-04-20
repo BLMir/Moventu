@@ -6,7 +6,7 @@ import com.moventum.randomrouter.component.*
 import config.config
 import config.googleStaticApi
 
-class GeneratePerimeterService {
+class PerimeterService {
 
     private var numWayPoints : Int
     private var pointCollection : MutableList<Location> = mutableListOf()

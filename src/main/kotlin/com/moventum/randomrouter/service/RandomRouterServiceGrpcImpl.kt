@@ -5,9 +5,9 @@ import com.moventum.randomrouter.Route
 import com.moventum.randomrouter.RouteReq
 import io.grpc.stub.StreamObserver
 
-class RandomRouterServiceGrpcImpl(private val generateRouteService: GenerateRouteService): RandomRouterGrpc.RandomRouterImplBase() {
+class RandomRouterServiceGrpcImpl(private val routeService: RouteService): RandomRouterGrpc.RandomRouterImplBase() {
     override fun route(request: RouteReq, responseObserver: StreamObserver<Route>) {
-        responseObserver.onNext(generateRouteService.getRoute(request))
+        responseObserver.onNext(routeService.getRoute(request))
         responseObserver.onCompleted()
     }
 }
