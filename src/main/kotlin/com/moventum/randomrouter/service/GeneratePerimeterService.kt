@@ -3,6 +3,8 @@ package com.moventum.randomrouter.service
 import com.moventum.randomrouter.Location
 import com.moventum.randomrouter.RouteReq
 import com.moventum.randomrouter.component.*
+import config.config
+import config.googleStaticApi
 
 class GeneratePerimeterService {
 
@@ -42,7 +44,7 @@ class GeneratePerimeterService {
         pointCollection.map {
             print("&markers=color:blue%7Clabel:S%7C${it.lat},${it.lon}")
         }
-        print("&key=AIzaSyB0poIVJNAZGwHVGnVoCv40FSwb1YqSoXo")
+        print("&key=${config[googleStaticApi]}")
         return pointCollection
     }
 
