@@ -10,11 +10,15 @@ service RandomRouter {
 }
 
 message RouteReq {
-    string name = 1;
-    string fromExpression = 2;
+    Location initialLocation = 1;
+    uint32 minutes = 2;
 }
 
 message Route {
-    string name = 1;
-    string expression =2;
+    string route = 1;
+}
+
+message Location {
+    float lat = 1;
+    float lon = 2;
 }

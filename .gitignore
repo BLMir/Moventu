@@ -17,3 +17,5 @@ gradle-app.setting
 # ide
 .idea/
 out/
+
+local.properties
