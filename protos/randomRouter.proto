@@ -19,6 +19,6 @@ message Route {
 }
 
 message Location {
-    float lat = 1;
-    float lon = 2;
+    double lat = 1;
+    double lon = 2;
 }
