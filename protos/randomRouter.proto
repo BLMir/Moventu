@@ -1,18 +1,24 @@
 syntax = "proto3";
 
+option java_multiple_files = true;
+option java_package = "com.moventum.randomrouter";
+option java_outer_classname = "RandomRouterServer";
 
 service RandomRouter {
     rpc route(RouteReq) returns (Route){
-
     };
 }
 
 message RouteReq {
-    string name = 1;
-    string fromExpression = 2;
+    Location initialLocation = 1;
+    uint32 minutes = 2;
 }
 
 message Route {
-    string name = 1;
-    string expression =2;
+    string route = 1;
+}
+
+message Location {
+    double lat = 1;
+    double lon = 2;
 }
