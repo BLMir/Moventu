@@ -1,2 +1,3 @@
-Google.key="GOOGLE API KEY"
-Server.port=8081
+Google.apiKey=DIRECTION API KEY
+Google.staticApiKey=STATIC API KEY
+Server.port=PORT
