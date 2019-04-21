@@ -2,11 +2,9 @@ package com.moventum.randomrouter.component
 
 import com.moventum.randomrouter.AVG_WALK_SPEED
 import com.moventum.randomrouter.Location
-import java.util.Random
+import kotlin.random.Random
 
-private val random = Random()
-
-fun random(to : Int , from : Int = 0) : Int = random.nextInt(to - from) + from
+fun random(to : Int , from : Int = 0) : Int = Random.nextInt(to - from + 1) + from
 fun Int.toKm () : Float = ( this.toFloat() / AVG_WALK_SPEED ) * 1000
 fun Int.toMeters () : Int = this * 1000
 fun Double.toRad () : Double = this *  Math.PI / 180
