@@ -1,28 +1,30 @@
 package com.moventum.randomrouter.service
 
-import com.moventum.randomrouter.Location
-import com.moventum.randomrouter.MAX_WAY_POINTS
-import com.moventum.randomrouter.MIN_WAY_POINTS
-import com.moventum.randomrouter.RouteReq
+import com.moventum.randomrouter.*
 import com.moventum.randomrouter.component.*
 import config.config
 import config.googleStaticApi
 
 class PerimeterService {
+    private var pointCollection: MutableList<Location> = mutableListOf()
 
-    private var pointCollection : MutableList<Location> = mutableListOf()
+    fun createPerimeter(routeRequest: RouteReq, dynamicFactor: Double): MutableList<Location> {
 
-
-    fun createPerimeter(routeRequest: RouteReq, dynamicFactor: Double) : MutableList<Location> {
-
-        val totalWayPoints : Int = random(MAX_WAY_POINTS, MIN_WAY_POINTS)
-        var bearing: Int = random(360)
+        val totalWayPoints: Int = random(MAX_WAY_POINTS, MIN_WAY_POINTS)
+        var bearing: Double = random(360).toDouble()
 
         pointCollection.add(routeRequest.initialLocation)
 
-        repeat(totalWayPoints){
-            pointCollection.add(destinationPoint(bearing,routeRequest.minutes.toKm().div(totalWayPoints), pointCollection.last(), dynamicFactor))
-            bearing = bearing.plus((360/totalWayPoints))
+        repeat(totalWayPoints) {
+            pointCollection.add(
+                createDestinationPoint(
+                    bearing = bearing.toRad(),
+                    distance = routeRequest.minutes.toKm().div(totalWayPoints),
+                    pointReference = pointCollection.last(),
+                    dynamicFactor = dynamicFactor
+                )
+            )
+            bearing = bearing.plus((360 / totalWayPoints))
         }
 
         print("https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap")
@@ -33,16 +35,23 @@ class PerimeterService {
         return pointCollection
     }
 
-    private fun destinationPoint(bearing : Int, distance : Float, point : Location, dynamicFactor: Double) : Location {
-        val dist = distance / (6371.toMeters() * dynamicFactor) //Earth's radius in Km
-        val bearingRad = bearing.toDouble().toRad()
+    private fun createDestinationPoint(
+        bearing: Double,
+        distance: Float,
+        pointReference: Location,
+        dynamicFactor: Double
+    ): Location {
+        val dist = distance / (EARTH_RADIUS.toMeters() * dynamicFactor) //Earth's radius in Km
 
-        val fromLat = point.lat.toDouble().toRad()
-        val fromLon = point.lon.toDouble().toRad()
+        val latFrom = pointReference.lat.toRad()
+        val lonFrom = pointReference.lon.toRad()
 
-        val lat = haversineLat(fromLat, dist.toDouble(), bearingRad).toDeg()
-        val lon = haversineLon(lat, fromLat, fromLon, dist.toDouble(), bearingRad).toDeg()
+        val latTo = haversineLat(latFrom, dist, bearing).toDeg()
+        val lonTo = haversineLon(latTo, latFrom, lonFrom, dist, bearing).toDeg()
 
-        return Location.newBuilder().setLat(lat.toFloat()).setLon(lon.toFloat()).build()
+        return location {
+            lat = latTo
+            lon = lonTo
+        }
     }
 }
