@@ -1,10 +1,12 @@
 package com.moventum.randomrouter
 
 import com.moventum.randomrouter.component.location
+import config.serverPort
+import config.config
 import io.grpc.ManagedChannelBuilder
 
 fun main() {
-    val chanel = ManagedChannelBuilder.forAddress("localhost",5432).usePlaintext().build()
+    val chanel = ManagedChannelBuilder.forAddress("localhost", config[serverPort]).usePlaintext().build()
     val client = RandomRouterGrpc.newBlockingStub(chanel)
 
     val location = location {
