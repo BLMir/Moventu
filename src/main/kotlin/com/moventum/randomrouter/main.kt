@@ -11,8 +11,8 @@ import mu.KotlinLogging
 private val logger = KotlinLogging.logger{}
 
 fun main(args: Array<String>) {
-    val perimeterService = PerimeterService()
-    val generateRouteService = RouteService(perimeterService)
+    val generateRouteService = RouteService()
+
     val server = ServerBuilder
         .forPort(config[serverPort])
         .addService(RandomRouterServiceGrpcImpl(generateRouteService))
