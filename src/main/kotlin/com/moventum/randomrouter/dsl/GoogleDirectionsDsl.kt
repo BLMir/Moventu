@@ -5,9 +5,9 @@ import config.config
 import config.googleDirectionsApi
 
 class UrlGoogleDirectionsBuilder {
-
     companion object {
-        val url = "https://maps.googleapis.com/maps/api/directions/json?key=${config[googleDirectionsApi]}"
+        private val urlGoogleDirection = "https://maps.googleapis.com/maps/api/directions/json?key=${config[googleDirectionsApi]}"
+        val urlGoogleStatic = "https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap"
     }
 
     private lateinit var origin: String
@@ -33,7 +33,7 @@ class UrlGoogleDirectionsBuilder {
     }
 
     override fun toString(): String {
-        return "$url$origin$wayPoints$mode$avoid"
+        return "$urlGoogleDirection$origin$wayPoints$mode$avoid"
     }
 
     fun mode(mode: String) {
