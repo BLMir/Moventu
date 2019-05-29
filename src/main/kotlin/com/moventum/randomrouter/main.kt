@@ -1,6 +1,5 @@
 package com.moventum.randomrouter
 
-import com.moventum.randomrouter.service.PerimeterService
 import com.moventum.randomrouter.service.RouteService
 import com.moventum.randomrouter.service.RandomRouterServiceGrpcImpl
 import config.config
@@ -10,7 +9,7 @@ import mu.KotlinLogging
 
 private val logger = KotlinLogging.logger{}
 
-fun main(args: Array<String>) {
+fun main() {
     val generateRouteService = RouteService()
 
     val server = ServerBuilder
