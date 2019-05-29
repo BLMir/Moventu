@@ -2,8 +2,11 @@ package com.moventum.randomrouter.service
 
 import com.moventum.randomrouter.*
 import com.moventum.randomrouter.component.*
+<<<<<<< HEAD
 import com.moventum.randomrouter.dsl.UrlGoogleDirectionsBuilder.Companion.urlGoogleStatic
 import com.moventum.randomrouter.dsl.urlGoogleDirections
+=======
+>>>>>>> fad5f81e17d150608dcb1956f294f31b9e5d50c4
 import config.config
 import config.googleStaticApi
 import mu.KotlinLogging
@@ -32,7 +35,15 @@ class PerimeterService {
             bearing = bearing.plus((360 / totalWayPoints))
         }
 
+<<<<<<< HEAD
         logger.info {"$urlGoogleStatic${pointCollection.joinToString("") { "&markers=color:blue%7Clabel:S%7C${it.lat},${it.lon}" }}&key=${config[googleStaticApi]}"}
+=======
+        logger.info {
+            "https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap" +
+                    "${pointCollection.joinToString("") { "&markers=color:blue%7Clabel:S%7C${it.lat},${it.lon}" }}" +
+                    "&key=${config[googleStaticApi]}"
+        }
+>>>>>>> fad5f81e17d150608dcb1956f294f31b9e5d50c4
         return pointCollection
     }
 
