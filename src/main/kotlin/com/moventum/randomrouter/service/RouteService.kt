@@ -24,6 +24,7 @@ class RouteService {
             avoid(listOf("ferries"))
         }.build()
 
+
         val result =  try {
             URL(url)
                 .openStream()

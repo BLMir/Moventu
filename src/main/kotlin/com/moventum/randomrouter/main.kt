@@ -11,7 +11,6 @@ private val logger = KotlinLogging.logger{}
 
 fun main() {
     val generateRouteService = RouteService()
-
     val server = ServerBuilder
         .forPort(config[serverPort])
         .addService(RandomRouterServiceGrpcImpl(generateRouteService))

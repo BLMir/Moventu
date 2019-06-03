@@ -30,8 +30,8 @@ class PerimeterService {
             )
             bearing = bearing.plus((360 / totalWayPoints))
         }
-
         logger.info {"$urlGoogleStatic${pointCollection.joinToString("") { "&markers=color:blue%7Clabel:S%7C${it.lat},${it.lon}" }}&key=${config[googleStaticApi]}"}
+
         return pointCollection
     }
 
