@@ -30,7 +30,10 @@ dependencies {
     compile("io.grpc:grpc-netty:1.14.0")
     compile("io.grpc:grpc-protobuf:1.14.0")
     compile("io.grpc:grpc-stub:1.14.0")
-    compile ("com.natpryce:konfig:1.6.1.0")
+    compile("com.natpryce:konfig:1.6.1.0")
+    compile("org.slf4j:log4j-over-slf4j:1.7.25")
+    compile("io.github.microutils:kotlin-logging:1.4.6")
+    compile("ch.qos.logback:logback-classic:1.2.1")
 
     if (JavaVersion.current().isJava9Compatible()) {
         // Workaround for @javax.annotation.Generated
