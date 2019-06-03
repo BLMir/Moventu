@@ -20,4 +20,3 @@ fun haversineLon (lat2 : Double, lat1 : Double, lon1 : Double, dist: Double, bea
 fun Double.toDeg () : Double = this * 180 / Math.PI
 
 fun location(block: Location.Builder.() -> Unit) = Location.newBuilder().apply(block).build()
-

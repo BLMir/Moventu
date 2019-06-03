@@ -15,7 +15,9 @@ message RouteReq {
 }
 
 message Route {
-    string route = 1;
+    string distance = 1;
+    string duration = 2;
+    string map = 3;
 }
 
 message Location {
