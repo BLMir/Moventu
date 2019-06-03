@@ -5,11 +5,15 @@ import com.moventum.randomrouter.Route
 import com.moventum.randomrouter.RouteReq
 import com.moventum.randomrouter.dsl.urlGoogleDirections
 import com.moventum.randomrouter.entity.GoogleDirectionsResponse
+import config.config
+import config.googleStaticApi
 import java.io.IOException
 import java.net.URL
 
 class RouteService {
-    fun getRoute(route: RouteReq) {
+
+    private val staticMapUrl ="https://maps.googleapis.com/maps/api/staticmap?size=800x800&path=weight:5%7Ccolor:red%7Cenc:"
+    fun getRoute(route: RouteReq): Route {
 
         val perimeterService = PerimeterService()
 
@@ -28,9 +32,13 @@ class RouteService {
         } catch (e: IOException) {
             "Error with ${e.message}."
         }
-        val jsonResponse = Gson().fromJson(result,GoogleDirectionsResponse::class.java).routes
+        val jsonResponse = Gson().fromJson(result,GoogleDirectionsResponse::class.java)
 
-        println(jsonResponse)
+        return Route.newBuilder()
+            .setDistance(jsonResponse.route.leg.distance.text)
+            .setMap("$staticMapUrl${jsonResponse.route.overview_polyline.points.replace("\\\\","\\")}&key=${config[googleStaticApi]}")
+            .setDuration(jsonResponse.route.leg.duration.text)
+            .build()
 
     }
 }

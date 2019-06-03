@@ -10,8 +10,8 @@ fun main() {
     val client = RandomRouterGrpc.newBlockingStub(chanel)
 
     val location = location {
-        lat = "51.3396955".toDouble()
-        lon = "12.3730747".toDouble()
+        lat = 39.57106
+        lon = 2.64879
     }
 
     print(client.route(RouteReq.newBuilder().setInitialLocation(location).setMinutes(80).build()))

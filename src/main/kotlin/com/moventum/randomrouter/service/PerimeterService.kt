@@ -3,7 +3,6 @@ package com.moventum.randomrouter.service
 import com.moventum.randomrouter.*
 import com.moventum.randomrouter.component.*
 import com.moventum.randomrouter.dsl.UrlGoogleDirectionsBuilder.Companion.urlGoogleStatic
-import com.moventum.randomrouter.dsl.urlGoogleDirections
 import config.config
 import config.googleStaticApi
 import mu.KotlinLogging
