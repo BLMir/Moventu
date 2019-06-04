@@ -2,18 +2,34 @@
   <br>
   <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/MoventuRamdomRoutersmall.png?raw=true" alt="Random Router" width="200"></a>
   <br>
-  Random Router Services
+  Random Router (Grpc Services)
   <br>
 </h1>
 
-<h4 align="center">The services is able to generate randoms route given a duration time and start gps point. This project is part of an ambitious project calls Movemtu.</h4>
-<img src="img/MoventuRamdomRoutersmall.png" align="right" />
+<h4 align="center">The services is able to generate randoms route given a duration time and start gps point.</h4>
+<h4 align="center">This project is part of an ambitious project calls Movemtu.</h4>
 
+<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/l1fRfBh53oBVnC5xqu" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/l1fRfBh53oBVnC5xqu">via GIPHY</a></p>
+
+### Initial Configuration
+
+1- We need to request the Google Direction API <a href="https://developers.google.com/maps/documentation/directions/start"> here </a>.
+After that we can start adding the key to the resources.
+```shell
+Google.apiKey=YOUR_DIRECTION_API_KEY
+```
+2- Assign a port to the grpc server.
+```shell
+Server.port=PORT
+```
+3- (OPTIONAL) Add a google static api key. Just if we want to see the route drawn in a image.
+```shell
+Google.staticApiKey=YOUR_STATIC_API_KEY
+```
 
 ## Installing / Getting started
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+First of all you need 
 
 ```shell
 packagemanager install awesome-project
@@ -23,10 +39,6 @@ awesome-project "Do something!"  # prints "Nah."
 
 Here you should say what actually happens when you execute the code above.
 
-### Initial Configuration
-
-Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
-This is the section where you would document those requirements.
 
 ## Developing
 
