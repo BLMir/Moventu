@@ -1,5 +1,8 @@
 ![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
 
+
+<img src="img/MoventuRamdomRouter.png" align="right" />
+
 # Random Router (by Moventu)
 > Random route generator service.
 
