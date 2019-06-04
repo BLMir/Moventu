@@ -9,7 +9,9 @@
 <h4 align="center">The services is able to generate randoms route given a duration time and start gps point.</h4>
 <h4 align="center">This project is part of an ambitious project calls Movemtu.</h4>
 
-<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/l1fRfBh53oBVnC5xqu" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/l1fRfBh53oBVnC5xqu">via GIPHY</a></p>
+<p align="center">
+  <img alt="random router" src="https://media.giphy.com/media/l1fRfBh53oBVnC5xqu/giphy.gif">
+</p>
 
 ### Initial Configuration
 
