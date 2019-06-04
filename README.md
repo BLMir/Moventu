@@ -3,15 +3,16 @@
   <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/MoventuRamdomRoutersmall.png?raw=true" alt="Random Router" width="200"></a>
   <br>
   Random Router (Grpc Services)
+  <h4 align="center">This project is part of an ambitious project calls Movemtu.</h4>
   <br>
 </h1>
 
 <h4 align="center">The services is able to generate randoms route given a duration time and start gps point.</h4>
-<h4 align="center">This project is part of an ambitious project calls Movemtu.</h4>
 
 <p align="center">
   <img alt="random router" src="https://media.giphy.com/media/l1fRfBh53oBVnC5xqu/giphy.gif">
 </p>
+<h4 align="center">All routes have the same start/End point and duration.</h4>
 
 ### Initial Configuration
 
