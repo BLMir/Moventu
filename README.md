@@ -1,4 +1,4 @@
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+![Logo of the project](https://github.com/BLMir/RandomRouter/blob/readme/img/MoventuRamdomRoutersmall.png?raw=true)
 
 
 <img src="img/MoventuRamdomRouter.png" align="right" />
