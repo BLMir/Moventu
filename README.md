@@ -1,7 +1,4 @@
-![Logo of the project](https://github.com/BLMir/RandomRouter/blob/readme/img/MoventuRamdomRoutersmall.png?raw=true)
-
-
-<img src="img/MoventuRamdomRouter.png" align="right" />
+<img src="img/MoventuRamdomRoutersmall.png" align="right" />
 
 # Random Router (by Moventu)
 > Random route generator service.
