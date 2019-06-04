@@ -1,10 +1,14 @@
+<h1 align="center">
+  <br>
+  <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/MoventuRamdomRoutersmall.png?raw=true" alt="Random Router" width="200"></a>
+  <br>
+  Random Router Services
+  <br>
+</h1>
+
+<h4 align="center">The services is able to generate randoms route given a duration time and start gps point. This project is part of an ambitious project calls Movemtu.</h4>
 <img src="img/MoventuRamdomRoutersmall.png" align="right" />
 
-# Random Router (by Moventu)
-> Random route generator service.
-
-The services is able to generate randoms route given a duration time and start gps point. This project is part of an ambitious project calls Movemtu.
- 
 
 ## Installing / Getting started
 
