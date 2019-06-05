@@ -3,7 +3,7 @@
   <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/MoventuRamdomRoutersmall.png?raw=true" alt="Random Router"></a>
   <br>
   Random Router (Grpc Services) made with Kotlin
-  <h4 align="center">This project is part of an ambitious project calls Movemtu.</h4>
+  <h4 align="center">This project is part of an ambitious project calls Moventu.</h4>
   <br>
 </h1>
 
