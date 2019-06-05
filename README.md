@@ -48,6 +48,6 @@ When We were develop this services we faced some improvement that we had to stor
 
 ## Licensing
 
-                                                        Apache License
-                                                  Version 2.0, January 2004
-                                                 http://www.apache.org/licenses/
+<p align="center">Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/</p>
