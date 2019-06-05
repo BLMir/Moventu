@@ -3,7 +3,7 @@
   <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/MoventuRamdomRoutersmall.png?raw=true" alt="Random Router"></a>
   <br>
   Random Router (Grpc Services) made with Kotlin
-  <h4 align="center">This project is part of an ambitious project calls  <a href="#Moventu">Movemtu</a>.</h4>
+  <h4 align="center">This project is part of an ambitious project calls  <a href="#Moventu">Moventu</a>.</h4>
   <br>
 </h1>
 
@@ -46,10 +46,19 @@ When We were develop this services we faced some improvement that we had to stor
 - Nano Fernandez
 - Biel Mir
 
+## Moventu
+<h1 align="center">
+  <img src="https://github.com/BLMir/RandomRouter/blob/moventuInfo/img/logoword.png?raw=true"></a>
+  <br>
+  <img src="https://github.com/BLMir/RandomRouter/blob/moventuInfo/img/wip.jpg?raw=true" width="100%"></a>
+</h1>
+
+This idea born from the necessity to encourage users GO OUT, making them feel the motivation to discover new locations, with indications of random and personal Routes.
+
 ## Licensing
 
 <p align="center">Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses/</p>
 
-## Moventu
+
