@@ -3,7 +3,7 @@
   <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/MoventuRamdomRoutersmall.png?raw=true" alt="Random Router" width="200"></a>
   <br>
   Random Router (Grpc Services)
-  This project is part of an ambitious project calls Movemtu.
+  <h4 align="center">This project is part of an ambitious project calls Movemtu.</h4>
   <br>
 </h1>
 
