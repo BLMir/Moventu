@@ -46,10 +46,12 @@ When We were develop this services we faced some improvement that we had to stor
 - Nano Fernandez
 - Biel Mir
 
+## Moventu
+This idea born from the necessity to *encourage* users GO OUT, making them feel the *motivation* to *discover* new locations, with indications of random and personal *Routes*.
 ## Licensing
 
 <p align="center">Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses/</p>
 
-## Moventu
+
