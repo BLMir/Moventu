@@ -35,10 +35,10 @@ Google.staticApiKey=YOUR_STATIC_API_KEY
 When We were develop this services we faced some improvement that we had to store them, here is the list 
 
 - Backend:
-- - [] Grpc to REST
-- - [] Distance check logic
+  - [ ] Grpc to REST
+  - [ ] Distance check logic
 - Front End:
-- - [] Web/Ios/Android Client 
+  - [ ] Web/Ios/Android Client 
   
 ## Maintainers
 
@@ -48,6 +48,6 @@ When We were develop this services we faced some improvement that we had to stor
 
 ## Licensing
 
-                                Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                                                        Apache License
+                                                  Version 2.0, January 2004
+                                                 http://www.apache.org/licenses/
