@@ -49,10 +49,10 @@ When We were develop this services we faced some improvement that we had to stor
 ## Moventu
 <h1 align="center">
   <br>
-  <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/moventuword.png?raw=true" alt="Random Router"></a>
+  <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/logoword.png?raw=true"></a>
   <br>
   <br>
-  <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/wip.png?raw=true" alt="Random Router"></a>
+  <img src="https://github.com/BLMir/RandomRouter/blob/readme/img/wip.png?raw=true"></a>
 </h1>
 This idea born from the necessity to **encourage** users GO OUT, making them feel the **motivation** to **discover** new locations, with indications of random and personal **Routes**.
 
