@@ -48,9 +48,7 @@ When We were develop this services we faced some improvement that we had to stor
 
 ## Moventu
 <h1 align="center">
-  <img src="https://github.com/BLMir/RandomRouter/blob/moventuInfo/img/logoword.png?raw=true"></a>
-  <br>
-  <img src="https://github.com/BLMir/RandomRouter/blob/moventuInfo/img/wip.jpg?raw=true" width="100%"></a>
+  <img src="https://github.com/BLMir/RandomRouter/blob/moventuInfo/img/wip.png?raw=true" width="100%"></a>
 </h1>
 
 This idea born from the necessity to encourage users GO OUT, making them feel the motivation to discover new locations, with indications of random and personal Routes.
