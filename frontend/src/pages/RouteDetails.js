@@ -1,0 +1,29 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Wrapper from '../elements/Wrapper';
+import PageTitle from '../elements/PageTitle';
+import Alink from '../elements/Alink';
+import FixedBar from '../elements/FixedBar';
+import Icon from '../elements/Icon';
+
+function About() {
+  return (
+    <div>
+      <FixedBar top>
+        <Wrapper row between>
+          <Alink>
+            <Link to="/settings">
+              <Icon />
+            </Link>
+          </Alink>
+        </Wrapper>
+      </FixedBar>
+      <Wrapper between>
+        <PageTitle>Route details</PageTitle>
+        <p>dcjdkjfvjfknvjfdknvfjk</p>
+      </Wrapper>
+    </div>
+  );
+}
+
+export default About;
