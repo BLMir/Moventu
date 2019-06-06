@@ -70,3 +70,4 @@ yarn-error.log
 .firebase/hosting.cHVibGlj.cache
 .firebaserc
 firebase.json
+*.cache
