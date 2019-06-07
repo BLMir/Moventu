@@ -2,12 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import PageTitle from '../elements/PageTitle';
 import Wrapper from '../elements/Wrapper';
 import Button from '../elements/Button';
 
-const WrapperWithPaddingBottom = styled(Wrapper)`
-  padding-bottom: 200px;
-`;
 
 const Question = styled.p`
   font-weight: 700;
@@ -20,13 +18,14 @@ const Input = styled.input`
 
 function Home() {
   return (
-    <WrapperWithPaddingBottom>
+    <Wrapper>
+      <PageTitle>Set route</PageTitle>
       <Question>How many km?</Question>
       <Input />
       <Link to="/maproute">
         <Button>START</Button>
       </Link>
-    </WrapperWithPaddingBottom>
+    </Wrapper>
   );
 }
 

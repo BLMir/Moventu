@@ -38,7 +38,7 @@ const Header = () => {
         <Number>
           32 <Unit>min</Unit>
         </Number>
-        <Link to="/setroute">
+        <Link to="/routedetails">
           <ButtonStop>End</ButtonStop>
         </Link>
       </Wrapper>
