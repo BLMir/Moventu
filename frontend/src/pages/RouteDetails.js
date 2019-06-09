@@ -25,8 +25,7 @@ const B = styled.p`
 `;
 
 const C = styled(Button)`
-  position: relative;
-  bottom: -100px;
+  margin-top: 50px;
 `;
 
 function About() {

@@ -7,6 +7,7 @@ export default styled.div`
   justify-content: ${props => (props.between ? 'space-between' : 'center')};
   height: 100%;
   width: 100%;
+  margin: 0 auto;
   max-width: 555px;
   padding-left: var(--padding-global);
   padding-right: var(--padding-global);
