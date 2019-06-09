@@ -57,7 +57,7 @@ typings/
 # folders
 .cache/
 public
-build
+frontend/build
 
 # Mac files
 .DS_Store
