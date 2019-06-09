@@ -57,6 +57,7 @@ typings/
 # folders
 .cache/
 public
+build
 frontend/build
 
 # Mac files
