@@ -39,12 +39,4 @@ When We were develop this services we faced some improvement that we had to stor
   
 ## Maintainers
 
-- Lluis Llobera
-- Nano Fernandez
-- Biel Mir
-
-## Moventu
-<h1 align="center">
-  <img src="https://github.com/BLMir/RandomRouter/blob/moventuInfo/img/wip.png?raw=true" width="100%"></a>
-</h1>
-<h4 align="center">his idea born from the necessity to encourage users GO OUT, making them feel the motivation to discover new locations, with indications of random and personal Routes.</h4>
+- Biel Mir(BLMir)
