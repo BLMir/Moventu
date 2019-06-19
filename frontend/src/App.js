@@ -5,6 +5,7 @@ import Welcome from './pages/Welcome';
 import About from './pages/About';
 import MapRoute from './pages/MapRoute';
 import SetRoute from './pages/SetRoute';
+import RouteDetails from './pages/RouteDetails';
 
 import GlobalStyles from './elements/GlobalStyles';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/setroute" component={SetRoute} />
           <Route path="/maproute" component={MapRoute} />
           <Route path="/about" component={About} />
+          <Route path="/routedetails" component={RouteDetails} />
         </Switch>
       </BrowserRouter>
     </>

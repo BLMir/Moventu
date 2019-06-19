@@ -6,9 +6,9 @@ export default styled.div`
   align-items: center;
   justify-content: ${props => (props.between ? 'space-between' : 'center')};
   height: 100%;
-  max-width: 822px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 555px;
   padding-left: var(--padding-global);
   padding-right: var(--padding-global);
 `;

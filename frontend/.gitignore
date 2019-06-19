@@ -1,5 +1,3 @@
-.idea/
-=======
 # Logs
 logs
 *.log
@@ -60,6 +58,7 @@ typings/
 .cache/
 public
 build
+frontend/build
 
 # Mac files
 .DS_Store
@@ -74,20 +73,3 @@ yarn-error.log
 .firebaserc
 firebase.json
 *.cache
-frontend/build/asset-manifest.json
-frontend/build/asset-manifest.json
-frontend/build/index.html
-frontend/build/precache-manifest.8ece4e8796ecdc1cb205a2f626544a8a.js
-frontend/build/static/js/main.e0011844.chunk.js.map
-frontend/build/static/js/main.e0011844.chunk.js
-frontend/build/static/js/main.0db00407.chunk.js.map
-frontend/build/service-worker.js
-frontend/build/precache-manifest.8ece4e8796ecdc1cb205a2f626544a8a.js
-frontend/build/static/js/main.0db00407.chunk.js
-frontend/build/precache-manifest.0e256a040d81272cf0ef51a3119f74ac.js
-frontend/build/precache-manifest.8ece4e8796ecdc1cb205a2f626544a8a.js
-frontend/build/precache-manifest.8ece4e8796ecdc1cb205a2f626544a8a.js
-frontend/build/index.html
-frontend/build/asset-manifest.json
-frontend/build/precache-manifest.8ece4e8796ecdc1cb205a2f626544a8a.js
-frontend/build/service-worker.js

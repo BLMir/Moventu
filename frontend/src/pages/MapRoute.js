@@ -6,8 +6,9 @@ import NavControl from '../components/NavControl';
 import testmap from '../assets/testmap.png';
 
 const Map = styled.img`
-  height: 100vh;
-  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: -200px;
 `;
 
 function Home() {

@@ -34,26 +34,9 @@ Google.staticApiKey=YOUR_STATIC_API_KEY
 
 When We were develop this services we faced some improvement that we had to store them, here is the list 
 
-- Backend:
-  - [ ] Grpc to REST
-  - [ ] Distance check logic
-- Front End:
-  - [ ] Web/Ios/Android Client 
+ - [ ] Grpc to REST
+ - [ ] Distance check logic
   
 ## Maintainers
 
-- Lluis Llobera
-- Nano Fernandez
-- Biel Mir
-
-## Moventu
-<h1 align="center">
-  <img src="https://github.com/BLMir/RandomRouter/blob/moventuInfo/img/wip.png?raw=true" width="100%"></a>
-</h1>
-<h4 align="center">his idea born from the necessity to encourage users GO OUT, making them feel the motivation to discover new locations, with indications of random and personal Routes.</h4>
-
-## Licensing
-
-<p align="center">Apache License
-Version 2.0, January 2004
-http://www.apache.org/licenses/</p>
+- Biel Mir(BLMir)

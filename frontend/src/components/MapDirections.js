@@ -9,6 +9,7 @@ const Direction = styled.p`
   font-weight: 700;
   display: block;
   width: 100%;
+  line-height: 1.55;
 `;
 
 const Distance = styled.p`
@@ -21,8 +22,8 @@ const Distance = styled.p`
 const Header = () => {
   return (
     <FixedBar top>
-      <Wrapper column between>
-        <Direction> Follow NE direction</Direction>
+      <Wrapper column>
+        <Direction>Follow NE direction</Direction>
         <Distance>150m</Distance>
       </Wrapper>
     </FixedBar>

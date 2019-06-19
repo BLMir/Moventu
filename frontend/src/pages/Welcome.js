@@ -6,63 +6,50 @@ import PageTitle from '../elements/PageTitle';
 import Button from '../elements/Button';
 import Alink from '../elements/Alink';
 
-const Intro = styled(PageTitle)`
-  font-weight: 900;
-  font-size: 80px;
+const Logo = styled(PageTitle)`
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: -2px;
   text-align: center;
-  margin-bottom: 90px;
-
-  @media (max-width: 555px) {
-    font-size: 62px;
-    text-align: left;
-    margin-bottom: 70px;
-  }
-
-  @media (max-width: 333px) {
-    font-size: 50px;
-  }
+  margin-bottom: 30px;
 `;
 
-const Description = styled.h2`
-  font-size: 24px;
+const Slogan = styled.h2`
+  font-size: 22px;
   font-weight: 400;
-  margin-bottom: 70px;
-
-  @media (max-width: 555px) {
-    font-size: 20px;
-    margin-bottom: 60px;
-  }
+  margin-bottom: 140px;
 `;
 
-const Layout = styled.div`
+const ButtonLayout = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 40px;
 `;
 
-const Layout2 = styled.div`
+const AlinkLayout = styled.div`
+  font-size: 18px;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 100px;
 `;
 
 function Welcome() {
   return (
     <Wrapper>
-      <Intro>MOVENTU</Intro>
-      <Description>Get lost. A bit.</Description>
-      <Layout>
+      <Logo>Moventu</Logo>
+      <Slogan>Get lost. A bit.</Slogan>
+      <ButtonLayout>
         <Link to="/setroute">
-          <Button>Get started</Button>
+          <Button>GET STARTED</Button>
         </Link>
-      </Layout>
-      <Layout2>
+      </ButtonLayout>
+      <AlinkLayout>
         <Link to="/about">
           <Alink>Learn more</Alink>
         </Link>
-      </Layout2>
+      </AlinkLayout>
     </Wrapper>
   );
 }

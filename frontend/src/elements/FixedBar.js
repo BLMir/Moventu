@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  height: 70px;
+  display: flex;
+  align-items: center;
+  height: 60px;
   position: fixed;
   top: ${props => (props.top ? 0 : null)};
   bottom: ${props => (props.bottom ? 0 : null)};
@@ -10,9 +12,4 @@ export default styled.div`
   z-index: 999;
   background-color: var(--color-background-translucent);
   backdrop-filter: blur(2px);
-  line-height: 1.4;
-
-  @media (max-width: 555px) {
-    height: 60px;
-  }
 `;
