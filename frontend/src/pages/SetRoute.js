@@ -13,6 +13,9 @@ const Question = styled.p`
 
 const Input = styled.input`
   margin-bottom: 5vh;
+  color: var(--color-background);
+  text-align: center;
+  border-radius: 4px;
 `;
 
 const A = styled(Button)`
@@ -24,7 +27,7 @@ function Home() {
     <Wrapper>
       <PageTitle>Set route</PageTitle>
       <Question>How many km?</Question>
-      <Input />
+      <Input type="number" />
       <Link to="/maproute">
         <A>START</A>
       </Link>
