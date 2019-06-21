@@ -34,12 +34,11 @@ export default createGlobalStyle`
     --color-secondary: hsl(179, 93%, 39%);
     --color-secondary-hover: hsl(240, 100%, 70%);
     --color-error: hsl(343, 100%, 45%);
-    --font-main: sans-serif;
     --padding-global: 4%;
     padding-top: 80px;
     padding-bottom: 50px;
     background-color: var(--color-background);
-    font-family: sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: var(--color-primary);
