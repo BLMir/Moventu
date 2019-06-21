@@ -39,10 +39,10 @@ export default createGlobalStyle`
     padding-bottom: 50px;
     background-color: var(--color-background);
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
     color: var(--color-primary);
-    line-height: 1;
+    line-height: 1.3;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
   }
