@@ -27,7 +27,7 @@ function Home() {
     <Wrapper>
       <PageTitle>Set route</PageTitle>
       <Question>How many km?</Question>
-      <Input type="number" />
+      <Input type="number" inputmode="decimal" />
       <Link to="/maproute">
         <A>START</A>
       </Link>
