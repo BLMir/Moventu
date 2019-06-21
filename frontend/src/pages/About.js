@@ -10,7 +10,9 @@ function About() {
       <Wrapper between>
         <PageTitle>What dis?</PageTitle>
         <p>
-          露鵜と都舳尾津等えへゅ、リアハネ、つふるよる名舳むおりゃ日素二列たま。二ムエヤカ他差派は巣ゅへこ遊差ぬネムサひまコフハヨムヤソみとそぬ巣魔もいんせふりひとしくさつなせ屋擢瀬屋雲模保。屋区津毛露ちたみなむほ無保津譜差へンヘウヒ野素めっ名課離なかあらみ「もんりチオヌ」ラゆや遊阿個阿ケツュムエ二野留、ふとしお列雲
+          Moventu is born from the necessity to encourage people to GO OUT,
+          making them feel the motivation to discover new locations, with
+          indications of random and personal Routes.
         </p>
       </Wrapper>
     </div>
