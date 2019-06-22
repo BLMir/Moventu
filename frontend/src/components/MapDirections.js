@@ -19,15 +19,13 @@ const Distance = styled.p`
   width: 100%;
 `;
 
-const Header = () => {
-  return (
-    <FixedBar top>
-      <Wrapper column>
-        <Direction>Follow NE direction</Direction>
-        <Distance>150m</Distance>
-      </Wrapper>
-    </FixedBar>
-  );
-};
+const MapDirection = () => (
+  <FixedBar top>
+    <Wrapper column>
+      <Direction>Follow NE direction</Direction>
+      <Distance>150m</Distance>
+    </Wrapper>
+  </FixedBar>
+);
 
-export default Header;
+export default MapDirection;
