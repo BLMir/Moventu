@@ -11,14 +11,12 @@ const Map = styled.img`
   left: -200px;
 `;
 
-function Home() {
-  return (
-    <>
-      <MapDirections />
-      <Map src={testmap} />
-      <NavControl />
-    </>
-  );
-}
+const MapRoute = () => (
+  <>
+    <MapDirections />
+    <Map src={testmap} />
+    <NavControl />
+  </>
+);
 
-export default Home;
+export default MapRoute;
