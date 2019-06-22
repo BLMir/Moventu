@@ -36,23 +36,21 @@ const AlinkLayout = styled.div`
   margin-top: 100px;
 `;
 
-function Welcome() {
-  return (
-    <Wrapper>
-      <Logo>Moventu</Logo>
-      <Slogan>Get lost. A bit.</Slogan>
-      <ButtonLayout>
-        <Link to="/setroute">
-          <Button>GET STARTED</Button>
-        </Link>
-      </ButtonLayout>
-      <AlinkLayout>
-        <Link to="/about">
-          <Alink>Learn more</Alink>
-        </Link>
-      </AlinkLayout>
-    </Wrapper>
-  );
-}
+const Welcome = () => (
+  <Wrapper>
+    <Logo>Moventu</Logo>
+    <Slogan>Get lost. A bit.</Slogan>
+    <ButtonLayout>
+      <Link to="/setroute">
+        <Button>GET STARTED</Button>
+      </Link>
+    </ButtonLayout>
+    <AlinkLayout>
+      <Link to="/about">
+        <Alink>Learn more</Alink>
+      </Link>
+    </AlinkLayout>
+  </Wrapper>
+);
 
 export default Welcome;
