@@ -12,16 +12,14 @@ const Icon = styled.img`
   width: 28px;
 `;
 
-function Header() {
-  return (
-    <FixedBar top>
-      <Wrapper row between>
-        <Link to="/">
-          <Icon src={ArrowBack} alt="Back" />
-        </Link>
-      </Wrapper>
-    </FixedBar>
-  );
-}
+const HeaderBack = () => (
+  <FixedBar top>
+    <Wrapper row between>
+      <Link to="/">
+        <Icon src={ArrowBack} alt="Back" />
+      </Link>
+    </Wrapper>
+  </FixedBar>
+);
 
-export default Header;
+export default HeaderBack;
