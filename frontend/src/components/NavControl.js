@@ -28,22 +28,20 @@ const Unit = styled.span`
   font-weight: 400;
 `;
 
-const Header = () => {
-  return (
-    <FixedBar bottom>
-      <Wrapper row between>
-        <Number>
-          2.7 / 5 <Unit>km</Unit>
-        </Number>
-        <Number>
-          32 <Unit>min</Unit>
-        </Number>
-        <Link to="/routedetails">
-          <ButtonStop>End</ButtonStop>
-        </Link>
-      </Wrapper>
-    </FixedBar>
-  );
-};
+const NavControl = () => (
+  <FixedBar bottom>
+    <Wrapper row between>
+      <Number>
+        2.7 / 5 <Unit>km</Unit>
+      </Number>
+      <Number>
+        32 <Unit>min</Unit>
+      </Number>
+      <Link to="/routedetails">
+        <ButtonStop>End</ButtonStop>
+      </Link>
+    </Wrapper>
+  </FixedBar>
+);
 
-export default Header;
+export default NavControl;
