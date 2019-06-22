@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import FixedBar from '../elements/FixedBar';
 import Wrapper from '../elements/Wrapper';
-import Icon from '../elements/Icon';
 
 const Direction = styled.p`
   font-size: 24px;
