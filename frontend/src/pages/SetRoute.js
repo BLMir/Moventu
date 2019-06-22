@@ -18,7 +18,7 @@ const Input = styled.input`
   border-radius: 4px;
 `;
 
-const A = styled(Button)`
+const ButtonWithMargin = styled(Button)`
   margin-top: 50px;
 `;
 
@@ -28,7 +28,7 @@ const SetRoute = () => (
     <Question>How many km?</Question>
     <Input type="number" inputmode="decimal" />
     <Link to="/maproute">
-      <A>START</A>
+      <ButtonWithMargin>START</ButtonWithMargin>
     </Link>
   </Wrapper>
 );
