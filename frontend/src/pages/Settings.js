@@ -7,24 +7,22 @@ import Alink from '../elements/Alink';
 import FixedBar from '../elements/FixedBar';
 import Icon from '../elements/Icon';
 
-function About() {
-  return (
-    <div>
-      <FixedBar top>
-        <Wrapper row between>
-          <Alink>
-            <Link to="/settings">
-              <Icon />
-            </Link>
-          </Alink>
-        </Wrapper>
-      </FixedBar>
-      <Wrapper between>
-        <PageTitle>Settings</PageTitle>
-        <p>dcjdkjfvjfknvjfdknvfjk </p>
+const About = () => (
+  <div>
+    <FixedBar top>
+      <Wrapper row between>
+        <Alink>
+          <Link to="/settings">
+            <Icon />
+          </Link>
+        </Alink>
       </Wrapper>
-    </div>
-  );
-}
+    </FixedBar>
+    <Wrapper between>
+      <PageTitle>Settings</PageTitle>
+      <p>dcjdkjfvjfknvjfdknvfjk </p>
+    </Wrapper>
+  </div>
+);
 
 export default About;
