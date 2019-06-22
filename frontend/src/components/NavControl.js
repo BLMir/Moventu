@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+
 import FixedBar from '../elements/FixedBar';
 import Wrapper from '../elements/Wrapper';
 import Button from '../elements/Button';
