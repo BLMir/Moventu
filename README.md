@@ -1,12 +1,17 @@
 ## Moventu
+
 <h1 align="center">
   <img src="https://github.com/BLMir/RandomRouter/blob/moventuInfo/img/wip.png?raw=true" width="100%"></a>
 </h1>
-<p align="left">Moventu is a progressive web app born from the necessity to encourage users GO OUT, making them feel the motivation to discover new locations, with indications of random and personal Routes.</p>
+
+<p>Moventu is a progressive web app born from the necessity to encourage users to GO OUT, making them feel the motivation to explore and discover new locations around them.</p>
+
+<p>It serves a random loop route based on location and desired activity distance, and guides the user one step at a time, without revealing the full route or directions.</p>
 
 
-
-
+<br/>
+<br/>
+<br/>
 
 
 ## Maintainers
