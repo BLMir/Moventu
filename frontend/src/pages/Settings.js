@@ -8,7 +8,7 @@ import FixedBar from '../elements/FixedBar';
 import Icon from '../elements/Icon';
 
 const About = () => (
-  <div>
+  <>
     <FixedBar top>
       <Wrapper row between>
         <Alink>
@@ -22,7 +22,7 @@ const About = () => (
       <PageTitle>Settings</PageTitle>
       <p>dcjdkjfvjfknvjfdknvfjk </p>
     </Wrapper>
-  </div>
+  </>
 );
 
 export default About;
