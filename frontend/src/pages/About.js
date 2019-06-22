@@ -1,10 +1,12 @@
 import React from 'react';
-import Wrapper from '../elements/Wrapper';
-import PageTitle from '../elements/PageTitle';
+
 import HeaderBack from '../components/HeaderBack';
 
+import Wrapper from '../elements/Wrapper';
+import PageTitle from '../elements/PageTitle';
+
 const About = () => (
-  <div>
+  <>
     <HeaderBack />
     <Wrapper between>
       <PageTitle>What dis?</PageTitle>
@@ -14,7 +16,7 @@ const About = () => (
         random and personal Routes.
       </p>
     </Wrapper>
-  </div>
+  </>
 );
 
 export default About;
