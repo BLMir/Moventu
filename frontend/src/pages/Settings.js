@@ -7,7 +7,7 @@ import Alink from '../elements/Alink';
 import FixedBar from '../elements/FixedBar';
 import Icon from '../elements/Icon';
 
-const About = () => (
+const Settings = () => (
   <>
     <FixedBar top>
       <Wrapper row between>
@@ -25,4 +25,4 @@ const About = () => (
   </>
 );
 
-export default About;
+export default Settings;
