@@ -28,23 +28,19 @@ const ButtonWithMargin = styled(Button)`
   margin-top: 50px;
 `;
 
-function About() {
-  return (
-    <>
-      <Wrapper between>
-        <PageTitle>Route details</PageTitle>
-        <Unit>Distance</Unit>
-        <Number>5.2 km</Number>
-        <Unit>Time</Unit>
-        <Number>44 min</Number>
-        <Unit>Average speed</Unit>
-        <Number>3 km/h</Number>
-        <Link to="/">
-          <ButtonWithMargin>ENOUGH</ButtonWithMargin>
-        </Link>
-      </Wrapper>
-    </>
-  );
-}
+const RouteDetails = () => (
+  <Wrapper between>
+    <PageTitle>Route details</PageTitle>
+    <Unit>Distance</Unit>
+    <Number>5.2 km</Number>
+    <Unit>Time</Unit>
+    <Number>44 min</Number>
+    <Unit>Average speed</Unit>
+    <Number>3 km/h</Number>
+    <Link to="/">
+      <ButtonWithMargin>ENOUGH</ButtonWithMargin>
+    </Link>
+  </Wrapper>
+);
 
-export default About;
+export default RouteDetails;

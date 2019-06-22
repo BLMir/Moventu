@@ -22,17 +22,15 @@ const A = styled(Button)`
   margin-top: 50px;
 `;
 
-function Home() {
-  return (
-    <Wrapper>
-      <PageTitle>Set route</PageTitle>
-      <Question>How many km?</Question>
-      <Input type="number" inputmode="decimal" />
-      <Link to="/maproute">
-        <A>START</A>
-      </Link>
-    </Wrapper>
-  );
-}
+const SetRoute = () => (
+  <Wrapper>
+    <PageTitle>Set route</PageTitle>
+    <Question>How many km?</Question>
+    <Input type="number" inputmode="decimal" />
+    <Link to="/maproute">
+      <A>START</A>
+    </Link>
+  </Wrapper>
+);
 
-export default Home;
+export default SetRoute;
