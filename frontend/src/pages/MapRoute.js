@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import MapDirections from '../components/MapDirections';
 import NavControl from '../components/NavControl';
+
 import testmap from '../assets/testmap.png';
 
 const Map = styled.img`
