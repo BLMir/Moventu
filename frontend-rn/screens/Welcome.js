@@ -10,6 +10,10 @@ const Welcome = () => (
   </View>
 );
 
+Welcome.navigationOptions = {
+  header: null
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
