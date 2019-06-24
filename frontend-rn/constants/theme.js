@@ -14,4 +14,10 @@ const size = {
   xs: 15
 };
 
-export { color, size };
+const space = {
+  big: 70,
+  medium: 50,
+  small: 30
+};
+
+export { color, size, space };
