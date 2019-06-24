@@ -27,23 +27,23 @@ Welcome.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'hsl(0, 0%, 5%)',
+    backgroundColor: theme.color.dark,
     alignItems: 'center',
     justifyContent: 'center'
   },
   logo: {
-    color: 'hsl(0, 0%, 95%)',
-    fontSize: 60,
+    color: theme.color.lighter,
+    fontSize: theme.size.xl,
     fontWeight: 'bold',
     marginBottom: 50
   },
   slogan: {
-    color: 'hsl(0, 0%, 90%)',
-    fontSize: 36,
+    color: theme.color.light,
+    fontSize: theme.size.l,
     marginBottom: 140
   },
   button: {
-    backgroundColor: 'cyan',
+    backgroundColor: theme.color.accent,
     height: 50,
     width: 300,
     alignItems: 'center',
