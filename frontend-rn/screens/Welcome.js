@@ -1,12 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-import { Button } from '../components';
+import { theme } from '../constants';
+import Button from '../components';
 
 const Welcome = () => (
   <View style={styles.container}>
     <Text style={styles.logo}>Moventu</Text>
     <Text style={styles.slogan}>Get lost. A bit.</Text>
+    <TouchableOpacity style={styles.button} onPress={() => {}}>
+      <Text>START</Text>
+    </TouchableOpacity>
+    <TouchableOpacity onPress={() => {}}>
+      <Text style={styles.link}>Learn more</Text>
+    </TouchableOpacity>
+    <TouchableOpacity onPress={() => {}}>
+      <Text style={styles.link}>Terms of service</Text>
+    </TouchableOpacity>
   </View>
 );
 
@@ -29,7 +39,20 @@ const styles = StyleSheet.create({
   },
   slogan: {
     color: 'hsl(0, 0%, 90%)',
-    fontSize: 36
+    fontSize: 36,
+    marginBottom: 140
+  },
+  button: {
+    backgroundColor: 'cyan',
+    height: 50,
+    width: 300,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 30,
+  },
+  link: {
+    color: 'hsl(0, 0%, 90%)',
+    marginBottom: 30
   }
 });
 
