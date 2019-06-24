@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   slogan: {
     color: theme.color.light,
-    fontSize: theme.size.l,
+    fontSize: theme.size.m,
     marginBottom: 140
   },
   button: {
