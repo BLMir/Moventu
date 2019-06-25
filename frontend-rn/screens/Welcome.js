@@ -1,59 +1,42 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Text } from 'react-native';
+import styled from 'styled-components';
 
 import { theme } from '../constants';
-import Button from '../components';
+import Button from '../components/Button';
+import Container from '../components/Container';
+
+const Logo = styled.Text`
+  color: ${theme.color.lighter};
+  font-size: ${theme.size.xl};
+  font-weight: bold;
+  margin-bottom: ${theme.size.m};
+`;
+
+const Slogan = styled.Text`
+  color: ${theme.color.light};
+  font-size: ${theme.size.m};
+  margin-bottom: ${theme.space.xl};
+`;
 
 const Welcome = () => (
-  <View style={styles.container}>
-    <Text style={styles.logo}>Moventu</Text>
-    <Text style={styles.slogan}>Get lost. A bit.</Text>
-    <TouchableOpacity style={styles.button} onPress={() => {}}>
+  <Container>
+    <Logo>Moventu</Logo>
+    <Slogan>Get lost. A bit.</Slogan>
+    <Button primary onPress={() => {}}>
       <Text>START</Text>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={() => {}}>
-      <Text style={styles.link}>Learn more</Text>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={() => {}}>
-      <Text style={styles.link}>Terms of service</Text>
-    </TouchableOpacity>
-  </View>
+    </Button>
+    <Button onPress={() => {}}>
+      <Text>Learn more</Text>
+    </Button>
+    <Button onPress={() => {}}>
+      <Text>Terms of service</Text>
+    </Button>
+  </Container>
 );
 
 Welcome.navigationOptions = {
   header: null
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: theme.color.dark,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  logo: {
-    color: theme.color.lighter,
-    fontSize: theme.size.xl,
-    fontWeight: 'bold',
-    marginBottom: 50
-  },
-  slogan: {
-    color: theme.color.light,
-    fontSize: theme.size.m,
-    marginBottom: 140
-  },
-  button: {
-    backgroundColor: theme.color.accent,
-    height: 50,
-    width: 300,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 30,
-  },
-  link: {
-    color: 'hsl(0, 0%, 90%)',
-    marginBottom: 30
-  }
-});
 
 export default Welcome;
