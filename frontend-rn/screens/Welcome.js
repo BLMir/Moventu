@@ -3,8 +3,9 @@ import { Text } from 'react-native';
 import styled from 'styled-components';
 
 import { theme } from '../constants';
-import Button from '../components/Button';
 import Container from '../components/Container';
+import Button from '../components/Button';
+import ButtonText from '../components/ButtonText';
 
 const Logo = styled.Text`
   color: ${theme.color.lighter};
@@ -24,13 +25,15 @@ const Welcome = () => (
     <Logo>Moventu</Logo>
     <Slogan>Get lost. A bit.</Slogan>
     <Button primary onPress={() => {}}>
-      <Text>START</Text>
+      <ButtonText large bold>
+        START
+      </ButtonText>
     </Button>
     <Button onPress={() => {}}>
-      <Text>Learn more</Text>
+      <ButtonText>Learn more</ButtonText>
     </Button>
     <Button onPress={() => {}}>
-      <Text>Terms of service</Text>
+      <ButtonText>Terms of service</ButtonText>
     </Button>
   </Container>
 );
