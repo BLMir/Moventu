@@ -1,16 +1,15 @@
-import React from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { TouchableOpacity } from 'react-native';
+import styled from 'styled-components';
 
 import { theme } from '../constants';
 
-const Button = () => (
-  <TouchableOpacity style={styles.button}>{children}</TouchableOpacity>
-);
-
-const styles = StyleSheet.create({
-  button: {
-    width: 100
-  }
-});
-
-export default Button;
+export default styled.TouchableOpacity`
+  align-items: center;
+  justify-content: center;
+  width: 300;
+  height: 50;
+  border-radius: 7;
+  background-color: ${props =>
+    props.primary ? theme.color.accent : theme.color.transparent};
+  margin-bottom: ${props => (props.primary ? theme.space.m : theme.space.xs)};
+`;
