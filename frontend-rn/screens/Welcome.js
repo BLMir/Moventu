@@ -11,7 +11,7 @@ const Logo = styled.Text`
   color: ${theme.color.lighter};
   font-size: ${theme.size.xl};
   font-weight: bold;
-  margin-bottom: ${theme.space.m};
+  margin-bottom: ${theme.space.s};
 `;
 
 const Slogan = styled.Text`
