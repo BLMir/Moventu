@@ -4,11 +4,13 @@ import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import Welcome from './screens/Welcome';
 import SetRoute from './screens/SetRoute';
+import MapRoute from './screens/MapRoute';
 
 const screens = createStackNavigator(
   {
     Welcome,
-    SetRoute
+    SetRoute,
+    MapRoute
   },
   {
     defaultNavigationOptions: {
