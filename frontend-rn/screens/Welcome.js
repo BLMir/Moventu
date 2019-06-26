@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { theme } from '../constants';
 import Container from '../components/Container';
 import Button from '../components/Button';
-import ButtonText from '../components/ButtonText';
+import StyledText from '../components/StyledText';
 
 const Logo = styled.Text`
   color: ${theme.color.lighter};
@@ -25,15 +25,15 @@ const Welcome = () => (
     <Logo>Moventu</Logo>
     <Slogan>Get lost. A bit.</Slogan>
     <Button primary onPress={() => {}}>
-      <ButtonText large bold>
+      <StyledText large bold>
         START
-      </ButtonText>
+      </StyledText>
     </Button>
     <Button onPress={() => {}}>
-      <ButtonText>Learn more</ButtonText>
+      <StyledText>Learn more</StyledText>
     </Button>
     <Button onPress={() => {}}>
-      <ButtonText>Terms of service</ButtonText>
+      <StyledText>Terms of service</StyledText>
     </Button>
   </Container>
 );
