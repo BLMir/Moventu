@@ -8,7 +8,7 @@ export default styled.TouchableOpacity`
   justify-content: center;
   width: 300;
   height: 50;
-  border-radius: 7;
+  border-radius: ${theme.radius.normal};
   background-color: ${props =>
     props.primary ? theme.color.accent : theme.color.transparent};
   margin-bottom: ${props => (props.primary ? theme.space.m : theme.space.xs)};
