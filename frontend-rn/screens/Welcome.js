@@ -26,7 +26,7 @@ const Welcome = ({ navigation }) => (
     <Slogan>Get lost. A bit.</Slogan>
     <Button primary onPress={() => navigation.navigate('SetRoute')}>
       <ButtonText large bold>
-        START
+        GET STARTED
       </ButtonText>
     </Button>
     <Button onPress={() => {}}>
