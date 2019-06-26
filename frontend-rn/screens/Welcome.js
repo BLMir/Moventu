@@ -10,7 +10,7 @@ import ButtonText from '../components/ButtonText';
 const Logo = styled.Text`
   color: ${theme.color.lighter};
   font-size: ${theme.size.xl};
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: ${theme.space.s};
 `;
 
