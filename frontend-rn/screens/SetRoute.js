@@ -24,14 +24,14 @@ const StyledHeading = styled(Heading)`
   margin-bottom: 10;
 `;
 
-const SetRoute = () => (
+const SetRoute = ({ navigation }) => (
   <Container>
     <Heading large>Set Route</Heading>
     <StyledHeading>How far do you want to go?</StyledHeading>
     <ScreenText />
     <KeyboardAvoidingView behavior="padding" enabled>
       <InputDistance keyboardType={'numeric'} />
-      <Button primary onPress={() => {}}>
+      <Button primary onPress={() => navigation.navigate('MapRoute')}>
         <ButtonText large bold>
           START
         </ButtonText>
