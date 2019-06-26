@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput } from 'react-native';
+import { TextInput, KeyboardAvoidingView } from 'react-native';
 import styled from 'styled-components';
 
 import { theme } from '../constants';
@@ -19,17 +19,23 @@ const InputDistance = styled.TextInput`
   margin-bottom: ${theme.space.m};
 `;
 
+const StyledHeading = styled(Heading)`
+  margin-bottom: 10;
+`;
+
 const SetRoute = () => (
   <Container>
     <Heading large>Set Route</Heading>
-    <Heading>How far do you want to go?</Heading>
+    <StyledHeading>How far do you want to go?</StyledHeading>
     <ScreenText />
-    <InputDistance keyboardType={'numeric'} />
-    <Button primary onPress={() => {}}>
-      <ButtonText large bold>
-        START
-      </ButtonText>
-    </Button>
+    <KeyboardAvoidingView behavior="padding" enabled>
+      <InputDistance keyboardType={'numeric'} />
+      <Button primary onPress={() => {}}>
+        <ButtonText large bold>
+          START
+        </ButtonText>
+      </Button>
+    </KeyboardAvoidingView>
   </Container>
 );
 
