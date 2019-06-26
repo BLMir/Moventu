@@ -20,11 +20,11 @@ const Slogan = styled.Text`
   margin-bottom: ${theme.space.xl};
 `;
 
-const Welcome = () => (
+const Welcome = ({ navigation }) => (
   <Container>
     <Logo>Moventu</Logo>
     <Slogan>Get lost. A bit.</Slogan>
-    <Button primary onPress={() => {}}>
+    <Button primary onPress={() => navigation.navigate('SetRoute')}>
       <StyledText large bold>
         START
       </StyledText>
