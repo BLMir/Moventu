@@ -9,10 +9,10 @@ const color = {
 
 const size = {
   xl: 60,
-  l: 36,
-  m: 28,
-  s: 19,
-  xs: 15
+  l: 30,
+  m: 24,
+  s: 18,
+  xs: 14
 };
 
 const space = {
@@ -23,4 +23,8 @@ const space = {
   xs: 10
 };
 
-export { color, size, space };
+const radius = {
+  normal: 7
+};
+
+export { color, size, space, radius };
