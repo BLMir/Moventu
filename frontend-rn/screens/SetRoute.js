@@ -5,7 +5,7 @@ import { theme } from '../constants';
 import Container from '../components/Container';
 import Heading from '../components/Heading';
 import Button from '../components/Button';
-import ButtonText from '../components/StyledText';
+import ButtonText from '../components/ButtonText';
 
 const SetRoute = () => (
   <Container>

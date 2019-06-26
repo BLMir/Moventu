@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { theme } from '../constants';
 import Container from '../components/Container';
 import Button from '../components/Button';
-import StyledText from '../components/StyledText';
+import ButtonText from '../components/ButtonText';
 
 const Logo = styled.Text`
   color: ${theme.color.lighter};
@@ -25,15 +25,15 @@ const Welcome = ({ navigation }) => (
     <Logo>Moventu</Logo>
     <Slogan>Get lost. A bit.</Slogan>
     <Button primary onPress={() => navigation.navigate('SetRoute')}>
-      <StyledText large bold>
+      <ButtonText large bold>
         START
-      </StyledText>
+      </ButtonText>
     </Button>
     <Button onPress={() => {}}>
-      <StyledText>Learn more</StyledText>
+      <ButtonText>Learn more</ButtonText>
     </Button>
     <Button onPress={() => {}}>
-      <StyledText>Terms of service</StyledText>
+      <ButtonText>Terms of service</ButtonText>
     </Button>
   </Container>
 );
