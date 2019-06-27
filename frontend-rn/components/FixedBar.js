@@ -1,15 +1,19 @@
+import { View } from 'react-native';
 import styled from 'styled-components';
 
-export default styled.div`
-  display: flex;
+import { theme } from '../constants';
+
+export default styled.View`
+  flex: 1;
+  width: 100%;
   align-items: center;
+  flex-direction: ${props => (props.row ? 'row' : 'column')};
   height: 60;
-  position: fixed;
+  position: absolute;
   top: ${props => (props.top ? 0 : null)};
   bottom: ${props => (props.bottom ? 0 : null)};
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: var(--color-background-translucent);
-  backdrop-filter: blur(2px);
+  background-color: ${theme.color.translucent};
 `;
