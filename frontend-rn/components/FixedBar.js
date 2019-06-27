@@ -6,7 +6,7 @@ import { theme } from '../constants';
 export default styled.View`
   flex: 1;
   width: 100%;
-  align-items: center;
+  align-items: ${props => (props.left ? 'left' : 'center')};;
   flex-direction: ${props => (props.row ? 'row' : 'column')};
   height: 60;
   position: absolute;
