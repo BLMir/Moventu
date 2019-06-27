@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Image } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import styled from 'styled-components';
 
 import { theme } from '../constants';
@@ -8,34 +8,26 @@ import FixedBar from '../components/FixedBar';
 import Button from '../components/Button';
 import ButtonText from '../components/ButtonText';
 
-import testmap from '../assets/testmap.png';
 
 const Direction = styled.Text`
   font-size: 24;
   font-weight: 700;
-  display: block;
-  width: 100%;
-  line-height: 1.55;
   color: ${theme.color.lighter};
 `;
 
 const Distance = styled.Text`
   font-size: 20;
   color: ${theme.color.light};
-  display: block;
-  width: 100%;
 `;
 
 const Map = styled.Image`
-  position: fixed;
-  top: 0;
-  left: -200;
+  position: absolute;
+  top: 60;
 `;
 
 const ButtonStop = styled(Button)`
-  font-weight: 700;
   background-color: hsl(360, 81%, 45%);
-  width: 10vw;
+  width: 100;
   height: 44;
 `;
 
@@ -54,14 +46,14 @@ const Unit = styled.Text`
 const MapRoute = ({ navigation }) => (
   <>
     <FixedBar top>
-      <Wrapper column>
+      <View>
         <Direction>Follow NE direction</Direction>
         <Distance>150m</Distance>
-      </Wrapper>
-    </FixedBar>{' '}
+      </View>
+    </FixedBar>
     <Map source={require('../assets/testmap.png')} />
-    <FixedBar bottom>
-      <Wrapper row between>
+    <FixedBar bottom row>
+      <View>
         <Number>
           2.7 / 5 <Unit>km</Unit>
         </Number>
@@ -69,9 +61,9 @@ const MapRoute = ({ navigation }) => (
           32 <Unit>min</Unit>
         </Number>
         <ButtonStop onPress={() => navigation.navigate('Welcome')}>
-          End
+          <ButtonText>End</ButtonText>
         </ButtonStop>
-      </Wrapper>
+      </View>
     </FixedBar>
   </>
 );
