@@ -8,7 +8,6 @@ import FixedBar from '../components/FixedBar';
 import Button from '../components/Button';
 import ButtonText from '../components/ButtonText';
 
-
 const Direction = styled.Text`
   font-size: 24;
   font-weight: 700;
@@ -45,7 +44,7 @@ const Unit = styled.Text`
 
 const MapRoute = ({ navigation }) => (
   <>
-    <FixedBar top>
+    <FixedBar top left>
       <View>
         <Direction>Follow NE direction</Direction>
         <Distance>150m</Distance>
