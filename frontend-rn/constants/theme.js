@@ -4,7 +4,8 @@ const color = {
   light: 'hsl(0, 0%, 90%)',
   lighter: 'hsl(0, 0%, 95%)',
   accent: 'hsl(172, 100%, 47%)',
-  transparent: 'hsla(0, 0%, 0%, 0)'
+  transparent: 'hsla(0, 0%, 0%, 0)',
+  translucent: 'hsla(0, 0%, 10%, 0.9)'
 };
 
 const size = {
