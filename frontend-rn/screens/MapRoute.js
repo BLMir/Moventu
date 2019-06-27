@@ -9,19 +9,20 @@ import Button from '../components/Button';
 import ButtonText from '../components/ButtonText';
 
 const Direction = styled.Text`
-  font-size: 24;
+  font-size: ${theme.size.m};
   font-weight: 700;
   color: ${theme.color.lighter};
 `;
 
 const Distance = styled.Text`
-  font-size: 20;
+  font-size: ${theme.size.s};
   color: ${theme.color.light};
 `;
 
 const Map = styled.Image`
   position: absolute;
-  top: 60;
+  top: 0;
+  left: -100;
 `;
 
 const ButtonStop = styled(Button)`
@@ -32,39 +33,39 @@ const ButtonStop = styled(Button)`
 
 const Number = styled.Text`
   font-weight: 700;
-  font-size: 26;
+  font-size: ${theme.size.m};
   color: ${theme.color.lighter};
 `;
 
 const Unit = styled.Text`
   color: ${theme.color.light};
-  font-size: 17;
+  font-size: ${theme.size.s};
   font-weight: 400;
 `;
 
 const MapRoute = ({ navigation }) => (
   <>
     <FixedBar top left>
-      <View>
-        <Direction>Follow NE direction</Direction>
-        <Distance>150m</Distance>
-      </View>
+      <Direction>Follow NE direction</Direction>
+      <Distance>150m</Distance>
     </FixedBar>
     <Map source={require('../assets/testmap.png')} />
-    <FixedBar bottom row>
-      <View>
-        <Number>
-          2.7 / 5 <Unit>km</Unit>
-        </Number>
-        <Number>
-          32 <Unit>min</Unit>
-        </Number>
-        <ButtonStop onPress={() => navigation.navigate('Welcome')}>
-          <ButtonText>End</ButtonText>
-        </ButtonStop>
-      </View>
+    <FixedBar bottom row center>
+      <Number>
+        2.7 / 5 <Unit>km</Unit>
+      </Number>
+      <Number>
+        32 <Unit>min</Unit>
+      </Number>
+      <ButtonStop onPress={() => navigation.navigate('Welcome')}>
+        <ButtonText bold>End</ButtonText>
+      </ButtonStop>
     </FixedBar>
   </>
 );
+
+MapRoute.navigationOptions = {
+  header: null
+};
 
 export default MapRoute;
