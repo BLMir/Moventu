@@ -29,7 +29,7 @@ const Welcome = ({ navigation }) => (
         GET STARTED
       </ButtonText>
     </Button>
-    <Button onPress={() => {}}>
+    <Button onPress={() => navigation.navigate('About')}>
       <ButtonText>Learn more</ButtonText>
     </Button>
     <Button onPress={() => {}}>
