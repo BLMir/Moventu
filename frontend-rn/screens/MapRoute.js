@@ -46,7 +46,7 @@ const Unit = styled.Text`
 
 const MapRoute = ({ navigation }) => (
   <Container>
-    <FixedBar top left>
+    <FixedBar top left style={{ paddingTop: 30, height: 90 }}>
       <Direction>Follow NE direction</Direction>
       <Distance>150m</Distance>
     </FixedBar>
