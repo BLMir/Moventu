@@ -3,12 +3,14 @@ import { Image } from 'react-native';
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 
 import Welcome from './screens/Welcome';
+import About from './screens/About';
 import SetRoute from './screens/SetRoute';
 import MapRoute from './screens/MapRoute';
 
 const screens = createStackNavigator(
   {
     Welcome,
+    About,
     SetRoute,
     MapRoute
   },
