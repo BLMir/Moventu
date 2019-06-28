@@ -9,10 +9,9 @@ export default styled.Text`
   font-weight: bold;
   text-align: left;
   width: 100%;
-  position: absolute;
-  top: ${theme.space.l};
   padding-top: ${theme.space.xs};
   padding-bottom: ${theme.space.xs};
   padding-right: ${theme.space.xs};
   padding-left: ${theme.space.xs};
+  margin-bottom: ${theme.space.m};
 `;
