@@ -6,8 +6,8 @@ import { theme } from '../constants';
 export default styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
-  width: 300;
-  height: 50;
+  width: 90%;
+  height: 60;
   border-radius: ${theme.radius.normal};
   background-color: ${props =>
     props.primary ? theme.color.accent : theme.color.transparent};
