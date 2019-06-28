@@ -9,5 +9,5 @@ export default styled.View`
   background-color: ${theme.color.dark};
   align-items: center;
   justify-content: flex-start;
-  padding-top: ${theme.space.xl};
+  padding-top: ${theme.space.l};
 `;
