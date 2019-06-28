@@ -9,4 +9,5 @@ export default styled.View`
   background-color: ${theme.color.dark};
   align-items: center;
   justify-content: center;
+  padding-top: ${theme.space.s};
 `;
