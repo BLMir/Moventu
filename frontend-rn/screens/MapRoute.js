@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import { theme } from '../constants';
 
+import Container from '../components/Container';
 import FixedBar from '../components/FixedBar';
 import Button from '../components/Button';
 import ButtonText from '../components/ButtonText';
@@ -44,7 +45,7 @@ const Unit = styled.Text`
 `;
 
 const MapRoute = ({ navigation }) => (
-  <>
+  <Container>
     <FixedBar top left>
       <Direction>Follow NE direction</Direction>
       <Distance>150m</Distance>
@@ -61,7 +62,7 @@ const MapRoute = ({ navigation }) => (
         <ButtonText bold>End</ButtonText>
       </ButtonStop>
     </FixedBar>
-  </>
+  </Container>
 );
 
 MapRoute.navigationOptions = {
