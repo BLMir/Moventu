@@ -1,9 +1,9 @@
 ## Moventu
 
 <h1 align="center">
-  <img src="https://github.com/BLMir/Moventu/screenshots/Welcome.png?raw=true" width="100%">
-  <img src="https://github.com/BLMir/Moventu/screenshots/SetRoute.png?raw=true" width="100%"></a>
-  <img src="https://github.com/BLMir/Moventu/screenshots/MapRoute.png?raw=true" width="100%"></a>
+  <img src="https://github.com/BLMir/Moventu/blob/master/screenshots/Welcome.png" width="33%">
+  <img src="https://github.com/BLMir/Moventu/blob/master/screenshots/SetRoute.png" width="33%"></a>
+  <img src="https://github.com/BLMir/Moventu/blob/master/screenshots/MapRoute.png" width="33%"></a>
 </h1>
 
 <p>Moventu is an app born from the necessity to encourage users to GO OUT, making them feel the motivation to explore and discover new locations around them.</p>
