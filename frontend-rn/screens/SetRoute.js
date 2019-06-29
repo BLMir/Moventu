@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { KeyboardAvoidingView, Platform } from 'react-native';
 import Slider from 'react-native-slider';
 
 import { theme } from '../constants';
@@ -20,21 +19,15 @@ const SetRoute = ({ navigation }) => {
         How many km?
       </ScreenText>
       <ScreenText large>{distance}</ScreenText>
-      <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : null}
-        enabled
-      >
-        <Slider
-          style={{ marginBottom: theme.space.m }}
-          value={0}
-          onValueChange={() => setDistance(distance + 1)}
-        />
-        <Button primary onPress={() => navigation.navigate('MapRoute')}>
-          <ButtonText large bold>
-            START
-          </ButtonText>
-        </Button>
-      </KeyboardAvoidingView>
+      <Slider
+        style={{ width: '90%', marginBottom: theme.space.m }}
+        onValueChange={() => setDistance(distance + 1)}
+      />
+      <Button primary onPress={() => navigation.navigate('MapRoute')}>
+        <ButtonText large bold>
+          START
+        </ButtonText>
+      </Button>
     </Container>
   );
 };
