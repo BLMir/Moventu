@@ -27,7 +27,7 @@ const SetRoute = ({ navigation }) => {
         <Slider
           style={{ marginBottom: theme.space.m }}
           value={0}
-          onValueChange={() => setDistance(distance)}
+          onValueChange={() => setDistance(distance + 1)}
         />
         <Button primary onPress={() => navigation.navigate('MapRoute')}>
           <ButtonText large bold>
