@@ -19,7 +19,7 @@ const SetRoute = ({ navigation }) => {
       <ScreenText large bold>
         How many km?
       </ScreenText>
-      <ScreenText>{distance}</ScreenText>
+      <ScreenText large>{distance}</ScreenText>
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : null}
         enabled
