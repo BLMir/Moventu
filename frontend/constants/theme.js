@@ -10,7 +10,7 @@ const color = {
 
 const size = {
   xl: 60,
-  l: 30,
+  l: 44,
   m: 24,
   s: 18,
   xs: 14
