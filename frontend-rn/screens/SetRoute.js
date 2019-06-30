@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Slider from 'react-native-slider';
+import Slider from '../components/Slider';
 
 import { theme } from '../constants';
 
