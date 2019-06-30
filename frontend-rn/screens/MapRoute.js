@@ -4,10 +4,7 @@ import styled from 'styled-components';
 
 import { theme } from '../constants';
 
-import Container from '../components/Container';
-import FixedBar from '../components/FixedBar';
-import Button from '../components/Button';
-import ButtonText from '../components/ButtonText';
+import { Button, ButtonText, Container, FixedBar } from '../components';
 
 const Direction = styled.Text`
   font-size: ${theme.size.m};

@@ -3,9 +3,7 @@ import styled from 'styled-components';
 
 import { theme } from '../constants';
 
-import Container from '../components/Container';
-import ScreenHeading from '../components/ScreenHeading';
-import ScreenText from '../components/ScreenText';
+import { Container, ScreenHeading, ScreenText } from '../components';
 
 const About = ({ navigation }) => (
   <Container>

@@ -3,9 +3,8 @@ import { Text } from 'react-native';
 import styled from 'styled-components';
 
 import { theme } from '../constants';
-import Container from '../components/Container';
-import Button from '../components/Button';
-import ButtonText from '../components/ButtonText';
+
+import { Button, ButtonText, Container } from '../components';
 
 const Logo = styled.Text`
   color: ${theme.color.lighter};

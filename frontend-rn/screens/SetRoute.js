@@ -3,11 +3,13 @@ import Slider from '../components/Slider';
 
 import { theme } from '../constants';
 
-import Container from '../components/Container';
-import ScreenHeading from '../components/ScreenHeading';
-import ScreenText from '../components/ScreenText';
-import Button from '../components/Button';
-import ButtonText from '../components/ButtonText';
+import {
+  Button,
+  ButtonText,
+  Container,
+  ScreenHeading,
+  ScreenText
+} from '../components';
 
 const SetRoute = ({ navigation }) => {
   const [distance, setDistance] = useState(0);
