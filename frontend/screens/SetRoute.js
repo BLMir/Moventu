@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Slider from '../components/Slider';
 
 import { theme } from '../constants';
 
@@ -8,7 +7,8 @@ import {
   ButtonText,
   Container,
   ScreenHeading,
-  ScreenText
+  ScreenText,
+  Slider
 } from '../components';
 
 const SetRoute = ({ navigation }) => {
