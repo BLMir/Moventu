@@ -31,7 +31,7 @@ const Welcome = ({ navigation }) => (
     <Button onPress={() => navigation.navigate('About')}>
       <ButtonText>Learn more</ButtonText>
     </Button>
-    <Button onPress={() => {}}>
+    <Button onPress={() => navigation.navigate('TermsOfService')}>
       <ButtonText>Terms of service</ButtonText>
     </Button>
   </Container>
