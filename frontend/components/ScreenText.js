@@ -11,4 +11,6 @@ export default styled.Text`
   padding-bottom: ${theme.space.xs};
   padding-right: ${theme.space.xs};
   padding-left: ${theme.space.xs};
+  width: 100%;
+  text-align: left;
 `;
