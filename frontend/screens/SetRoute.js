@@ -16,7 +16,7 @@ const SetRoute = ({ navigation }) => {
 
   return (
     <Container>
-      <ScreenHeading>Set Route</ScreenHeading>
+      <ScreenHeading>Set route</ScreenHeading>
       <ScreenText large bold>
         How many km?
       </ScreenText>
