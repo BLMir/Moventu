@@ -17,10 +17,12 @@ const SetRoute = ({ navigation }) => {
   return (
     <Container>
       <ScreenHeading>Set route</ScreenHeading>
-      <ScreenText large bold>
+      <ScreenText large bold style={{ textAlign: 'center' }}>
         How many km?
       </ScreenText>
-      <ScreenText large>{distance}</ScreenText>
+      <ScreenText large style={{ textAlign: 'center' }}>
+        {distance}
+      </ScreenText>
       <Slider
         style={{ width: '90%', marginBottom: theme.space.m }}
         onValueChange={() => setDistance(distance + 1)}
