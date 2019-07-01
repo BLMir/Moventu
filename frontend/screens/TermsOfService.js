@@ -5,7 +5,7 @@ import { theme } from '../constants';
 
 import { Container, ScreenHeading, ScreenText } from '../components';
 
-const About = ({ navigation }) => (
+const TermsOfService = ({ navigation }) => (
   <Container>
     <ScreenHeading>Terms of service</ScreenHeading>
     <ScreenText>
@@ -17,8 +17,8 @@ const About = ({ navigation }) => (
   </Container>
 );
 
-About.navigationOptions = {
+TermsOfService.navigationOptions = {
   header: null
 };
 
-export default About;
+export default TermsOfService;
