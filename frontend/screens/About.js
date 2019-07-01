@@ -15,9 +15,7 @@ import {
 const About = ({ navigation }) => (
   <Container>
     <FixedBar top left>
-      <Button
-        onPress={() => navigation.goBack(null)}
-      >
+      <Button onPress={() => navigation.goBack(null)}>
         <ButtonText style={{ width: '100%', textAlign: 'left' }}>
           Back
         </ButtonText>
