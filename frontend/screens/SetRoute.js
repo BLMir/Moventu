@@ -11,7 +11,7 @@ import {
   Slider
 } from '../components';
 
-const SetRoute = ({ navigation, value }) => {
+const SetRoute = ({ navigation }) => {
   const [distance, setDistance] = useState(0);
 
   return (
