@@ -11,7 +11,7 @@ import {
   Slider
 } from '../components';
 
-const SetRoute = ({ navigation }) => {
+const SetRoute = ({ navigation, value }) => {
   const [distance, setDistance] = useState(0);
 
   return (
@@ -21,11 +21,12 @@ const SetRoute = ({ navigation }) => {
         How many km?
       </ScreenText>
       <ScreenText large style={{ textAlign: 'center' }}>
-        {distance}
+        {Math.round(distance)}
       </ScreenText>
       <Slider
+        value={distance}
         style={{ width: '90%', marginBottom: theme.space.m }}
-        onValueChange={() => setDistance(distance + 1)}
+        onValueChange={value => setDistance(value)}
       />
       <Button primary onPress={() => navigation.navigate('MapRoute')}>
         <ButtonText large bold>
