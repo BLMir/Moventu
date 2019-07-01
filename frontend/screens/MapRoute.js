@@ -6,6 +6,8 @@ import { theme } from '../constants';
 
 import { Button, ButtonText, Container, FixedBar } from '../components';
 
+import MapView from 'react-native-maps';
+
 const Direction = styled.Text`
   font-size: ${theme.size.m};
   font-weight: 700;
@@ -15,12 +17,6 @@ const Direction = styled.Text`
 const Distance = styled.Text`
   font-size: ${theme.size.s};
   color: ${theme.color.light};
-`;
-
-const Map = styled.Image`
-  position: absolute;
-  top: 0;
-  left: -100;
 `;
 
 const ButtonStop = styled(Button)`
@@ -47,7 +43,21 @@ const MapRoute = ({ navigation }) => (
       <Direction>Follow NE direction</Direction>
       <Distance>150m</Distance>
     </FixedBar>
-    <Map source={require('../assets/testmap.png')} />
+    <MapView
+      initialRegion={{
+        latitude: 37.78825,
+        longitude: -122.4324,
+        latitudeDelta: 0.0922,
+        longitudeDelta: 0.0421
+      }}
+      style={{
+        height: '100%',
+        width: '100%',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        zIndex: 998
+      }}
+    />
     <FixedBar bottom row center>
       <Number>
         2.7 / 5 <Unit>km</Unit>
