@@ -3,10 +3,26 @@ import styled from 'styled-components';
 
 import { theme } from '../constants';
 
-import { Container, ScreenHeading, ScreenText } from '../components';
+import {
+  Button,
+  ButtonText,
+  Container,
+  FixedBar,
+  ScreenHeading,
+  ScreenText
+} from '../components';
 
 const About = ({ navigation }) => (
   <Container>
+    <FixedBar top left>
+      <Button
+        onPress={() => navigation.goBack(null)}
+      >
+        <ButtonText style={{ width: '100%', textAlign: 'left' }}>
+          Back
+        </ButtonText>
+      </Button>
+    </FixedBar>
     <ScreenHeading>About</ScreenHeading>
     <ScreenText>
       Moventu is an app born from the necessity to encourage users to GO OUT,
