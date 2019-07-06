@@ -1,4 +1,4 @@
-package com.test;
+package com.moventu;
 
 import android.app.Application;
 
