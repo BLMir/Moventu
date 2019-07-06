@@ -99,7 +99,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
-  - react-native-maps (from `/Users/lewis/Desktop/test/test/node_modules/react-native-maps`)
+  - react-native-maps (from `/Users/lewis/Documents/Dev Projects/Moventu/frontend/node_modules/react-native-maps`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -110,7 +110,7 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
-  - RNGestureHandler (from `/Users/lewis/Desktop/test/test/node_modules/react-native-gesture-handler`)
+  - RNGestureHandler (from `/Users/lewis/Documents/Dev Projects/Moventu/frontend/node_modules/react-native-gesture-handler`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -141,7 +141,7 @@ EXTERNAL SOURCES:
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-maps:
-    :path: "/Users/lewis/Desktop/test/test/node_modules/react-native-maps"
+    :path: "/Users/lewis/Documents/Dev Projects/Moventu/frontend/node_modules/react-native-maps"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -163,7 +163,7 @@ EXTERNAL SOURCES:
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
   RNGestureHandler:
-    :path: "/Users/lewis/Desktop/test/test/node_modules/react-native-gesture-handler"
+    :path: "/Users/lewis/Documents/Dev Projects/Moventu/frontend/node_modules/react-native-gesture-handler"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -194,6 +194,6 @@ SPEC CHECKSUMS:
   RNGestureHandler: 5329a942fce3d41c68b84c2c2276ce06a696d8b0
   yoga: 616fde658be980aa60a2158835170f3f9c2d04b4
 
-PODFILE CHECKSUM: 5535c67ef645cf33fd922f95b949bc16722a0e24
+PODFILE CHECKSUM: 9221abad904b9b61d770e3ce8d0fa2fee20da207
 
 COCOAPODS: 1.7.3

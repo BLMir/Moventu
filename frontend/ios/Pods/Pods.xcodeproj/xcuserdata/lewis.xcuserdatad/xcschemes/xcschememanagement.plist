@@ -14,22 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-test-tvOS.xcscheme</key>
+		<key>Pods-moventu-tvOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-test-tvOSTests.xcscheme</key>
+		<key>Pods-moventu-tvOSTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-test.xcscheme</key>
+		<key>Pods-moventu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-testTests.xcscheme</key>
+		<key>Pods-moventuTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
