@@ -53,9 +53,11 @@ const MapRoute = ({ navigation }) => (
       style={{
         height: '100%',
         width: '100%',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        zIndex: 998
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        rigt: 0,
+        bottom: 0
       }}
     />
     <FixedBar bottom row center>
