@@ -51,12 +51,10 @@ const MapRoute = ({ navigation }) => (
         longitudeDelta: 0.0421
       }}
       style={{
-        height: '100%',
-        width: '100%',
         position: 'absolute',
         top: 0,
         left: 0,
-        rigt: 0,
+        right: 0,
         bottom: 0
       }}
     />
