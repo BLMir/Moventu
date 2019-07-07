@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SafeAreaView } from 'react-native';
 
 import { theme } from '../constants';
 
@@ -15,25 +16,27 @@ const SetRoute = ({ navigation }) => {
   const [distance, setDistance] = useState(0);
 
   return (
-    <Container>
-      <ScreenHeading>Set route</ScreenHeading>
-      <ScreenText large bold style={{ textAlign: 'center' }}>
-        How many km?
-      </ScreenText>
-      <ScreenText large style={{ textAlign: 'center' }}>
-        {Math.round(distance)}
-      </ScreenText>
-      <Slider
-        value={distance}
-        style={{ width: '90%', marginBottom: theme.space.m }}
-        onValueChange={value => setDistance(value)}
-      />
-      <Button primary onPress={() => navigation.navigate('MapRoute')}>
-        <ButtonText large bold>
-          START
-        </ButtonText>
-      </Button>
-    </Container>
+    <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
+      <Container>
+        <ScreenHeading>Set route</ScreenHeading>
+        <ScreenText large bold style={{ textAlign: 'center' }}>
+          How many km?
+        </ScreenText>
+        <ScreenText large style={{ textAlign: 'center' }}>
+          {Math.round(distance)}
+        </ScreenText>
+        <Slider
+          value={distance}
+          style={{ width: '90%', marginBottom: theme.space.m }}
+          onValueChange={value => setDistance(value)}
+        />
+        <Button primary onPress={() => navigation.navigate('MapRoute')}>
+          <ButtonText large bold>
+            START
+          </ButtonText>
+        </Button>
+      </Container>
+    </SafeAreaView>
   );
 };
 

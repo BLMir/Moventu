@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
 import styled from 'styled-components';
 
 import { theme } from '../constants';
@@ -20,21 +20,23 @@ const Slogan = styled.Text`
 `;
 
 const Welcome = ({ navigation }) => (
-  <Container>
-    <Logo>Moventu</Logo>
-    <Slogan>Get lost. A bit.</Slogan>
-    <Button primary onPress={() => navigation.navigate('SetRoute')}>
-      <ButtonText large bold>
-        GET STARTED
-      </ButtonText>
-    </Button>
-    <Button onPress={() => navigation.navigate('About')}>
-      <ButtonText>Learn more</ButtonText>
-    </Button>
-    <Button onPress={() => navigation.navigate('TermsOfService')}>
-      <ButtonText>Terms of service</ButtonText>
-    </Button>
-  </Container>
+  <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
+    <Container>
+      <Logo>Moventu</Logo>
+      <Slogan>Get lost. A bit.</Slogan>
+      <Button primary onPress={() => navigation.navigate('SetRoute')}>
+        <ButtonText large bold>
+          GET STARTED
+        </ButtonText>
+      </Button>
+      <Button onPress={() => navigation.navigate('About')}>
+        <ButtonText>Learn more</ButtonText>
+      </Button>
+      <Button onPress={() => navigation.navigate('TermsOfService')}>
+        <ButtonText>Terms of service</ButtonText>
+      </Button>
+    </Container>
+  </SafeAreaView>
 );
 
 Welcome.navigationOptions = {
