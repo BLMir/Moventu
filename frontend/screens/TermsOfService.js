@@ -1,6 +1,5 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native';
-import styled from 'styled-components';
 
 import { theme } from '../constants';
 
