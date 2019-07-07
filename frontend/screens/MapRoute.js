@@ -40,7 +40,7 @@ const Unit = styled.Text`
 const MapRoute = ({ navigation }) => (
   <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
     <Container>
-      <FixedBar top left style={{ paddingTop: 30, height: 90 }}>
+      <FixedBar top left>
         <Direction>Follow NE direction</Direction>
         <Distance>150m</Distance>
       </FixedBar>
