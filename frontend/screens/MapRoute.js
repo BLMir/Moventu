@@ -41,21 +41,25 @@ const MapRoute = ({ navigation }) => {
   const [location, setLocation] = useState({
     latitude: 0,
     longitude: 0,
-    error: 0
+    latitudeDelta: 0,
+    longitudeDelta: 0
   });
 
   useEffect(() => {
     Geolocation.getCurrentPosition(
       position => {
         setLocation({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-          error: null
+          location: {
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+            latitudeDelta: 0.015,
+            longitudeDelta: 0.015
+          }
         });
       },
       error => alert(error.message),
       {
-        enableHighAccuracy: false,
+        enableHighAccuracy: true,
         timeout: 20000
       }
     );
@@ -69,12 +73,8 @@ const MapRoute = ({ navigation }) => {
           <Distance>150m</Distance>
         </FixedBar>
         <MapView
-          initialRegion={{
-            latitude: location.latitude,
-            longitude: location.langitude,
-            latitudeDelta: 0.015,
-            longitudeDelta: 0.015
-          }}
+          initialRegion={location}
+          showsUserLocation={true}
           style={{
             position: 'absolute',
             top: 0,
