@@ -1,0 +1,1472 @@
+/usr/lib/jvm/java-8-oracle/bin/java -Dvisualvm.id=74569915912 -javaagent:/home/biel/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/191.6707.7/lib/idea_rt.jar=41449:/home/biel/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/191.6707.7/bin -Dfile.encoding=UTF-8 -classpath /usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/deploy.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-oracle/jre/lib/javaws.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfxswt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-oracle/jre/lib/plugin.jar:/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/home/biel/Documents/myprojects/Moventu/RandomRouter/out/production/classes:/home/biel/Documents/myprojects/Moventu/RandomRouter/out/production/resources:/home/biel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-protobuf/1.14.0/d429fdc2e0d288b34ea7588bb762eb458f385bd5/grpc-protobuf-1.14.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.5.1/8c3492f7662fa1cbf8ca76a0f5eb1146f7725acd/protobuf-java-3.5.1.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-netty/1.14.0/21c6edadd45b6869384f8aa0df1663d62c503617/grpc-netty-1.14.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-stub/1.14.0/74bfe83c0dc69bf903fff8df3568cbeb8b387d35/grpc-stub-1.14.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/com.natpryce/konfig/1.6.1.0/deb3fb0a440eced4ed52de0d1d5be4f2e9ab3f13/konfig-1.6.1.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.25/a87bb47468f47ee7aabbd54f93e133d4215769c3/log4j-over-slf4j-1.7.25.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.github.microutils/kotlin-logging/1.4.6/b5644ceb728b518ec11d6a5b5af90c48966816a4/kotlin-logging-1.4.6.jar:/home/biel/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.1/706a8b8206ead3683ec639dd270d11fd948fbb0e/logback-classic-1.2.1.jar:/home/biel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.21/d0634d54452abc421db494ad32dd215e6591c49f/kotlin-stdlib-jdk8-1.3.21.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-protobuf-lite/1.14.0/2ac8c28ca927f954eaa228a931d9c163cf3d860f/grpc-protobuf-lite-1.14.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-core/1.14.0/526e5be291c96e248789d769c108a084febda07f/grpc-core-1.14.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.27.Final/3769790a2033667d663f9a526d5b63cfecdbdf4e/netty-codec-http2-4.1.27.Final.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.27.Final/1a822ce7760bc6eb4937b7e448c9e081fedcc807/netty-handler-proxy-4.1.27.Final.jar:/home/biel/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/com.google.api.grpc/proto-google-common-protos/1.0.0/86f070507e28b930e50d218ee5b6788ef0dd05e6/proto-google-common-protos-1.0.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar:/home/biel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.21/d207ce2c9bcf17dc8e51bab4dbfdac4d013e7138/kotlin-stdlib-jdk7-1.3.21.jar:/home/biel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar:/home/biel/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.1/378913dfc3c6c71e7e2a2853eff2c3e8ac27599/logback-core-1.2.1.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-context/1.14.0/77252b5f926875891aaae5629e6ab2ef968cd6c6/grpc-context-1.14.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar:/home/biel/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.1.2/6dcc08f90f678ac33e5ef78c3c752b6f59e63e0c/error_prone_annotations-2.1.2.jar:/home/biel/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-contrib-grpc-metrics/0.12.3/a4c7ff238a91b901c8b459889b6d0d7a9d889b4d/opencensus-contrib-grpc-metrics-0.12.3.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-api/0.12.3/743f074095f29aa985517299545e72cc99c87de0/opencensus-api-0.12.3.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.27.Final/a1722d6bcbbef1c4c7877e8bf38b07a3db5ed07f/netty-codec-http-4.1.27.Final.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.27.Final/21bd9cf565390a8d72579b8664303e3c175dfc6a/netty-handler-4.1.27.Final.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.27.Final/285b09af98764cf02e4b77b3d95af188469a7133/netty-codec-socks-4.1.27.Final.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.27.Final/d2653d78ebaa650064768fb26b10051f5c8efb2c/netty-codec-4.1.27.Final.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.27.Final/b5c2da3ea89dd67320925f1504c9eb3615241b7c/netty-transport-4.1.27.Final.jar:/home/biel/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/f30e4a9897913e53d778f564110bafa1fef46643/kotlin-stdlib-common-1.3.21.jar:/home/biel/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.27.Final/aafe2b9fb0d8f3b200cf10b9fd6486c6a722d7a1/netty-buffer-4.1.27.Final.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.27.Final/2536447ef9605ccb2b5203aa22392c6514484ea9/netty-resolver-4.1.27.Final.jar:/home/biel/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.27.Final/6a12a969c27fb37b230c4bde5a67bd822fa6b7a4/netty-common-4.1.27.Final.jar com.moventum.randomrouter.MainKt
+20:01:10.066 [main] INFO  com.moventum.randomrouter.Main - Grpc endpoint listen port 6666
+20:02:36.745 [grpc-default-executor-0] INFO  c.m.r.s.RandomRouterServiceGrpcImpl - New route has been requested: initialLocation {
+  lat: 39.57106
+  lon: 2.64879
+}
+minutes: 80
+
+20:02:36.765 [grpc-default-executor-0] INFO  c.m.r.service.PerimeterService - https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C39.57106,2.64879&markers=color:blue%7Clabel:S%7C39.5673632347056,2.641751189871103&markers=color:blue%7Clabel:S%7C39.56781093740103,2.6316598313514588&markers=color:blue%7Clabel:S%7C39.57207128598276,2.626006807250967&markers=color:blue%7Clabel:S%7C39.57698570144331,2.6289556317613676&markers=color:blue%7Clabel:S%7C39.578910633746545,2.638299082761889&markers=color:blue%7Clabel:S%7C39.57641906070802,2.6471239380832303&markers=color:blue%7Clabel:S%7C39.57135814686741,2.6488802748134432&key=AIzaSyB0poIVJNAZGwHVGnVoCv40FSwb1YqSoXo
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJZ3pcp1qSlxIRJ7hZV9cRUS0",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJO2Di9kKSlxIR_-shsbUuI1g",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJ4xOy4m6SlxIRovIAoJhWZiQ",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJmS0pXHqSlxIRRmZ_5ljzpmo",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJm2lvtXySlxIRNNLzsBAIL6A",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJxVN2cGCSlxIRiDkBuPoL9xo",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJO3ZellmSlxIR_Q76jnVTtjc",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJW1LQdFCSlxIRHum6oEtxYjg",
+         "types" : [ "bar", "establishment", "point_of_interest" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJZ3pcp1qSlxIRJ7hZV9cRUS0",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 39.5792122,
+               "lng" : 2.6496113
+            },
+            "southwest" : {
+               "lat" : 39.56662,
+               "lng" : 2.6261571
+            }
+         },
+         "copyrights" : "Map data ©2019 Google, Inst. Geogr. Nacional",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "7.0 km",
+                  "value" : 7031
+               },
+               "duration" : {
+                  "text" : "1 hour 30 mins",
+                  "value" : 5371
+               },
+               "end_address" : "Plaça del Mercat, 1, 07001 Palma, Illes Balears, Spain",
+               "end_location" : {
+                  "lat" : 39.5710438,
+                  "lng" : 2.6487769
+               },
+               "start_address" : "Plaça del Mercat, 1, 07001 Palma, Illes Balears, Spain",
+               "start_location" : {
+                  "lat" : 39.5710438,
+                  "lng" : 2.6487769
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "26 m",
+                        "value" : 26
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 17
+                     },
+                     "end_location" : {
+                        "lat" : 39.5712522,
+                        "lng" : 2.6486649
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorthwest\u003c/b\u003e on \u003cb\u003ePlaça del Mercat\u003c/b\u003e toward \u003cb\u003eCarrer Estret de Sant Nicolau\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_vopF{idOILKFS@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5710438,
+                        "lng" : 2.6487769
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "86 m",
+                        "value" : 86
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 63
+                     },
+                     "end_location" : {
+                        "lat" : 39.57082219999999,
+                        "lng" : 2.647838
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCarrer dels Guixers\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "iwopFcidOVp@Vr@DJLXPV"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5712522,
+                        "lng" : 2.6486649
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 153
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 107
+                     },
+                     "end_location" : {
+                        "lat" : 39.5697383,
+                        "lng" : 2.6470342
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eCarrer dels Paraires\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "stopF_ddONt@Lj@DFHBFBTBTBJ@p@Jv@X"
+                     },
+                     "start_location" : {
+                        "lat" : 39.57082219999999,
+                        "lng" : 2.647838
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "60 m",
+                        "value" : 60
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 48
+                     },
+                     "end_location" : {
+                        "lat" : 39.569969,
+                        "lng" : 2.6464032
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer Constitució\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "{mopF}~cOMz@KRSl@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5697383,
+                        "lng" : 2.6470342
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "52 m",
+                        "value" : 52
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 32
+                     },
+                     "end_location" : {
+                        "lat" : 39.5695026,
+                        "lng" : 2.6463464
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003ePasseig del Born\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ioopF_{cO|AH"
+                     },
+                     "start_location" : {
+                        "lat" : 39.569969,
+                        "lng" : 2.6464032
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 108
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 87
+                     },
+                     "end_location" : {
+                        "lat" : 39.5696944,
+                        "lng" : 2.6451892
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer de l'Estanc\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "klopFuzcOSx@Oj@Uv@?F@DPz@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5695026,
+                        "lng" : 2.6463464
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 96
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 62
+                     },
+                     "end_location" : {
+                        "lat" : 39.5694545,
+                        "lng" : 2.6441333
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eCarrer del Forn de la Glòria\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "qmopFmscOF`@FZBN@N?D?L@F@T@R@H@J@D@BBFFF"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5696944,
+                        "lng" : 2.6451892
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "66 m",
+                        "value" : 66
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 47
+                     },
+                     "end_location" : {
+                        "lat" : 39.5689839,
+                        "lng" : 2.6436731
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003ePlaça de la Drassana\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "alopFylcOZZHHVR^`@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5694545,
+                        "lng" : 2.6441333
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "11 m",
+                        "value" : 11
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 9
+                     },
+                     "end_location" : {
+                        "lat" : 39.5690391,
+                        "lng" : 2.6435672
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e to stay on \u003cb\u003ePlaça de la Drassana\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ciopF}icOKR"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5689839,
+                        "lng" : 2.6436731
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "63 m",
+                        "value" : 63
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 41
+                     },
+                     "end_location" : {
+                        "lat" : 39.5685475,
+                        "lng" : 2.6431995
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCarrer del Consolat\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "oiopFiicOhAr@VT"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5690391,
+                        "lng" : 2.6435672
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 215
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 161
+                     },
+                     "end_location" : {
+                        "lat" : 39.5694454,
+                        "lng" : 2.6410157
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eAvinguda de Gabriel Roca\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "mfopF_gcOaAdBUb@ITIPOj@UlAG^I\\Ij@E\\"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5685475,
+                        "lng" : 2.6431995
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "18 m",
+                        "value" : 18
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 16
+                     },
+                     "end_location" : {
+                        "lat" : 39.5693193,
+                        "lng" : 2.6411482
+                     },
+                     "html_instructions" : "Sharp \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eCarrer Contramoll Mollet\u003c/b\u003e",
+                     "maneuver" : "turn-sharp-left",
+                     "polyline" : {
+                        "points" : "alopFkybOXY"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5694454,
+                        "lng" : 2.6410157
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "45 m",
+                        "value" : 45
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 39
+                     },
+                     "end_location" : {
+                        "lat" : 39.5689853,
+                        "lng" : 2.6409052
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer Contramoll Mollet\u003c/b\u003e",
+                     "maneuver" : "turn-slight-right",
+                     "polyline" : {
+                        "points" : "gkopFezbOT?j@n@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5693193,
+                        "lng" : 2.6411482
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "38 m",
+                        "value" : 38
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 29
+                     },
+                     "end_location" : {
+                        "lat" : 39.5687816,
+                        "lng" : 2.6412593
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003eCarrer Contramoll Mollet\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePartial restricted usage road\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "eiopFuxbOPa@BODKDEFA"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5689853,
+                        "lng" : 2.6409052
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 km",
+                        "value" : 260
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 188
+                     },
+                     "end_location" : {
+                        "lat" : 39.56662,
+                        "lng" : 2.6404407
+                     },
+                     "html_instructions" : "\u003cb\u003eCarrer Contramoll Mollet\u003c/b\u003e turns \u003cb\u003eright\u003c/b\u003e and becomes \u003cb\u003eMuelle Indústria Pesquera\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eRestricted usage road\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "{gopF{zbOB@B@@@RTz@`ANHLDNB`@DxEVN@JDNJ"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5687816,
+                        "lng" : 2.6412593
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 km",
+                        "value" : 260
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 189
+                     },
+                     "end_location" : {
+                        "lat" : 39.5687816,
+                        "lng" : 2.6412593
+                     },
+                     "html_instructions" : "Cross the road\u003cdiv style=\"font-size:0.9em\"\u003eRestricted usage road\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "kznpFwubOOKKEOAyEWa@EOCMEOI{@aASUAACACA"
+                     },
+                     "start_location" : {
+                        "lat" : 39.56662,
+                        "lng" : 2.6404407
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "91 m",
+                        "value" : 91
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 70
+                     },
+                     "end_location" : {
+                        "lat" : 39.5692706,
+                        "lng" : 2.6404175
+                     },
+                     "html_instructions" : "\u003cb\u003eMuelle Indústria Pesquera\u003c/b\u003e turns slightly \u003cb\u003eleft\u003c/b\u003e and becomes \u003cb\u003eCarrer Contramoll Mollet\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePartial restricted usage road\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "{gopF{zbOG@EDEJCNQ`@[l@Wd@?@A@?@AF"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5687816,
+                        "lng" : 2.6412593
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.7 km",
+                        "value" : 677
+                     },
+                     "duration" : {
+                        "text" : "8 mins",
+                        "value" : 506
+                     },
+                     "end_location" : {
+                        "lat" : 39.5686011,
+                        "lng" : 2.6328048
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "}jopFsubOEBAD?LDtABn@@L@J?B@@FHf@r@FJ@D?D?F?V@D?D@D@D?l@@fC?^?l@?XDnADfAHnB?H@B?B?B?BJb@DV@P?X?R?T@\\Bf@@T?p@@H@N@V?LAL?ND~@DxADf@?L?@CJIJ"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5692706,
+                        "lng" : 2.6404175
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 106
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 82
+                     },
+                     "end_location" : {
+                        "lat" : 39.5682651,
+                        "lng" : 2.6316562
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eAvinguda de Gabriel Roca\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "wfopF_faOHt@RfAZlAFV"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5686011,
+                        "lng" : 2.6328048
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "60 m",
+                        "value" : 60
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 52
+                     },
+                     "end_location" : {
+                        "lat" : 39.5678004,
+                        "lng" : 2.6320217
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "udopF{~`O|AgA"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5682651,
+                        "lng" : 2.6316562
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 99
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 68
+                     },
+                     "end_location" : {
+                        "lat" : 39.5672634,
+                        "lng" : 2.6310984
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "waopFcaaOjBvD"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5678004,
+                        "lng" : 2.6320217
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 99
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 75
+                     },
+                     "end_location" : {
+                        "lat" : 39.5678004,
+                        "lng" : 2.6320217
+                     },
+                     "html_instructions" : "Cross the road",
+                     "polyline" : {
+                        "points" : "k~npFk{`OkBwD"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5672634,
+                        "lng" : 2.6310984
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "60 m",
+                        "value" : 60
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 66
+                     },
+                     "end_location" : {
+                        "lat" : 39.5682651,
+                        "lng" : 2.6316562
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eAvinguda de Gabriel Roca\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "waopFcaaO}AfA"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5678004,
+                        "lng" : 2.6320217
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "13 m",
+                        "value" : 13
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 12
+                     },
+                     "end_location" : {
+                        "lat" : 39.5682147,
+                        "lng" : 2.63152
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eAvinguda de Gabriel Roca\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "udopF{~`OJZ"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5682651,
+                        "lng" : 2.6316562
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "94 m",
+                        "value" : 94
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 134
+                     },
+                     "end_location" : {
+                        "lat" : 39.5689193,
+                        "lng" : 2.6309243
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer Salt\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eTake the stairs\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "idopF_~`OYJ[X]Z[X]Z"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5682147,
+                        "lng" : 2.63152
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 232
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 182
+                     },
+                     "end_location" : {
+                        "lat" : 39.5706063,
+                        "lng" : 2.6293136
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eCarrer de l'Almirall Oquendo\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "whopFgz`OsArAmAfAw@r@wBpB"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5689193,
+                        "lng" : 2.6309243
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "62 m",
+                        "value" : 62
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 51
+                     },
+                     "end_location" : {
+                        "lat" : 39.5711514,
+                        "lng" : 2.6294366
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer de son Cotoneret\u003c/b\u003e",
+                     "maneuver" : "turn-slight-right",
+                     "polyline" : {
+                        "points" : "isopFep`OG?C?GAwAW"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5706063,
+                        "lng" : 2.6293136
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 196
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 160
+                     },
+                     "end_location" : {
+                        "lat" : 39.571976,
+                        "lng" : 2.6274203
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCarrer del Bisbe Teodor Úbeda\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "uvopF_q`Ou@bCo@tB_AxC"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5711514,
+                        "lng" : 2.6294366
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "20 m",
+                        "value" : 20
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 20
+                     },
+                     "end_location" : {
+                        "lat" : 39.5719937,
+                        "lng" : 2.6271844
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003ePasseig de l'Equador\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "{{opFkd`OAZ?R"
+                     },
+                     "start_location" : {
+                        "lat" : 39.571976,
+                        "lng" : 2.6274203
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 116
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 96
+                     },
+                     "end_location" : {
+                        "lat" : 39.5721314,
+                        "lng" : 2.6261571
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003ePasseig de l'Equador\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "}{opF{b`ONF@@@@HNBHBJBH@F@H?HAJAHK^WZa@`@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5719937,
+                        "lng" : 2.6271844
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 km",
+                        "value" : 281
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 210
+                     },
+                     "end_location" : {
+                        "lat" : 39.5741511,
+                        "lng" : 2.6281222
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer del Poble Espanyol\u003c/b\u003e/\u003cb\u003eCarrer Espanyol -1\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow Carrer Espanyol -1\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "y|opFo|_OKQ]U_@[g@a@y@u@][w@q@m@o@QMu@}@[a@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5721314,
+                        "lng" : 2.6261571
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "65 m",
+                        "value" : 65
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 49
+                     },
+                     "end_location" : {
+                        "lat" : 39.5744051,
+                        "lng" : 2.6287343
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eCarrer Hondures\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "mippFwh`O[]QSACACAC?{@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5741511,
+                        "lng" : 2.6281222
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 109
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 95
+                     },
+                     "end_location" : {
+                        "lat" : 39.57510810000001,
+                        "lng" : 2.6296126
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003eCarrer Hondures\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "akppFql`OOSYa@Y_@EGYa@g@o@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5744051,
+                        "lng" : 2.6287343
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 140
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 106
+                     },
+                     "end_location" : {
+                        "lat" : 39.5759652,
+                        "lng" : 2.6284169
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCarrer de son Espanyolet\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "moppFar`Ok@z@o@lAILEDe@n@Y^"
+                     },
+                     "start_location" : {
+                        "lat" : 39.57510810000001,
+                        "lng" : 2.6296126
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 km",
+                        "value" : 314
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 262
+                     },
+                     "end_location" : {
+                        "lat" : 39.57818470000001,
+                        "lng" : 2.6306721
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer de Mas\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ytppFsj`O_@_@uAwA[[w@y@c@c@gDoDc@_@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5759652,
+                        "lng" : 2.6284169
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 km",
+                        "value" : 400
+                     },
+                     "duration" : {
+                        "text" : "5 mins",
+                        "value" : 277
+                     },
+                     "end_location" : {
+                        "lat" : 39.5769153,
+                        "lng" : 2.635
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer de la Llibertat\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "sbqpFux`OJ}@Lu@Fe@R{AFc@PiABQVsB?IDIBGBETu@`@}Af@}A`@cB"
+                     },
+                     "start_location" : {
+                        "lat" : 39.57818470000001,
+                        "lng" : 2.6306721
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 km",
+                        "value" : 486
+                     },
+                     "duration" : {
+                        "text" : "6 mins",
+                        "value" : 366
+                     },
+                     "end_location" : {
+                        "lat" : 39.5792122,
+                        "lng" : 2.6398001
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCarrer de Niceto Alcalá Zamora\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "wzppFwsaOCCEGACCEEKg@gA[y@m@aBy@eBs@aBk@sAQc@Yu@sAoEg@sB"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5769153,
+                        "lng" : 2.635
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 128
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 83
+                     },
+                     "end_location" : {
+                        "lat" : 39.5781802,
+                        "lng" : 2.6404747
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer de Francesc Martí i Móra\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "aiqpFwqbOl@]z@g@bB_A"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5792122,
+                        "lng" : 2.6398001
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 96
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 72
+                     },
+                     "end_location" : {
+                        "lat" : 39.5773944,
+                        "lng" : 2.6409047
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003ePlaça de Madrid\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "sbqpF}ubOxBmADABABABABAB?D?B@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5781802,
+                        "lng" : 2.6404747
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "16 m",
+                        "value" : 16
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 12
+                     },
+                     "end_location" : {
+                        "lat" : 39.5773113,
+                        "lng" : 2.6410543
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003ePlaça de Madrid\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "u}ppFsxbON]"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5773944,
+                        "lng" : 2.6409047
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 226
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 169
+                     },
+                     "end_location" : {
+                        "lat" : 39.57610409999999,
+                        "lng" : 2.6431657
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eCarrer Rafael Rodríguez Méndez\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "e}ppFqybOJYFMxA_Dt@gBf@mADGBGJKNM"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5773113,
+                        "lng" : 2.6410543
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "10 m",
+                        "value" : 10
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 12
+                     },
+                     "end_location" : {
+                        "lat" : 39.5761453,
+                        "lng" : 2.6432681
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003ePlaça del Fortí\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "suppFyfcOIS"
+                     },
+                     "start_location" : {
+                        "lat" : 39.57610409999999,
+                        "lng" : 2.6431657
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 119
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 85
+                     },
+                     "end_location" : {
+                        "lat" : 39.5761331,
+                        "lng" : 2.6446308
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e to stay on \u003cb\u003ePlaça del Fortí\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "}uppFmgcONa@EoBCkAAq@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5761453,
+                        "lng" : 2.6432681
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 175
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 139
+                     },
+                     "end_location" : {
+                        "lat" : 39.5762869,
+                        "lng" : 2.6466605
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eAv. de Portugal\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "yuppF}ocOOoECkBAg@AYGW"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5761331,
+                        "lng" : 2.6446308
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 102
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 72
+                     },
+                     "end_location" : {
+                        "lat" : 39.5769934,
+                        "lng" : 2.6474154
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eAv. d'Alemanya\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "yvppFs|cOGOW[kBkB"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5762869,
+                        "lng" : 2.6466605
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 247
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 172
+                     },
+                     "end_location" : {
+                        "lat" : 39.574878,
+                        "lng" : 2.6482874
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer del Baró de Pinopar\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "e{ppFkadOhBi@fBm@\\KfBk@lA]"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5769934,
+                        "lng" : 2.6474154
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 176
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 132
+                     },
+                     "end_location" : {
+                        "lat" : 39.57362699999999,
+                        "lng" : 2.6495524
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eLa Rambla\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_nppFyfdOl@k@vByBh@k@h@i@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.574878,
+                        "lng" : 2.6482874
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "61 m",
+                        "value" : 61
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 53
+                     },
+                     "end_location" : {
+                        "lat" : 39.5732209,
+                        "lng" : 2.6490698
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer Eccehomo\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "efppFundOTZPRb@j@DB"
+                     },
+                     "start_location" : {
+                        "lat" : 39.57362699999999,
+                        "lng" : 2.6495524
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "30 m",
+                        "value" : 30
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 21
+                     },
+                     "end_location" : {
+                        "lat" : 39.5730466,
+                        "lng" : 2.6493383
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCarrer dels Àngels\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "scppFukdO`@u@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5732209,
+                        "lng" : 2.6490698
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 152
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 109
+                     },
+                     "end_location" : {
+                        "lat" : 39.5718319,
+                        "lng" : 2.6487048
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer de les Caputxines\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qbppFkmdOh@r@VVNLFDFBJ?N@B?F?N?Z?D@D@ZJF@HDB@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5730466,
+                        "lng" : 2.6493383
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "3 m",
+                        "value" : 3
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 3
+                     },
+                     "end_location" : {
+                        "lat" : 39.5718343,
+                        "lng" : 2.6486735
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eCarrer de la Rosa\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "}zopFkidO?D"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5718319,
+                        "lng" : 2.6487048
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "36 m",
+                        "value" : 36
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 27
+                     },
+                     "end_location" : {
+                        "lat" : 39.5715126,
+                        "lng" : 2.6486497
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCarrer de les Caputxines\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "}zopFeidOB?^@Z@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5718343,
+                        "lng" : 2.6486735
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "83 m",
+                        "value" : 83
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 68
+                     },
+                     "end_location" : {
+                        "lat" : 39.5714846,
+                        "lng" : 2.6496113
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003ePlaça del Mercat\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "}xopFaidOB}A@aB"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5715126,
+                        "lng" : 2.6486497
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "86 m",
+                        "value" : 86
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 62
+                     },
+                     "end_location" : {
+                        "lat" : 39.571014,
+                        "lng" : 2.6488593
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e to stay on \u003cb\u003ePlaça del Mercat\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "wxopFaodOJFFF?@DLDN@R@HBHJNh@l@"
+                     },
+                     "start_location" : {
+                        "lat" : 39.5714846,
+                        "lng" : 2.6496113
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "8 m",
+                        "value" : 8
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 6
+                     },
+                     "end_location" : {
+                        "lat" : 39.5710438,
+                        "lng" : 2.6487769
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e to stay on \u003cb\u003ePlaça del Mercat\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "yuopFkjdOCHAD"
+                     },
+                     "start_location" : {
+                        "lat" : 39.571014,
+                        "lng" : 2.6488593
+                     },
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : [
+                  {
+                     "location" : {
+                        "lat" : 39.5674371,
+                        "lng" : 2.6406074
+                     },
+                     "step_index" : 14,
+                     "step_interpolation" : 0.6427613302204376
+                  },
+                  {
+                     "location" : {
+                        "lat" : 39.5676701,
+                        "lng" : 2.6317976
+                     },
+                     "step_index" : 20,
+                     "step_interpolation" : 0.2426859683144112
+                  },
+                  {
+                     "location" : {
+                        "lat" : 39.5721314,
+                        "lng" : 2.6261571
+                     },
+                     "step_index" : 29,
+                     "step_interpolation" : 1
+                  },
+                  {
+                     "location" : {
+                        "lat" : 39.5767998,
+                        "lng" : 2.6292639
+                     },
+                     "step_index" : 34,
+                     "step_interpolation" : 0.3757345097995324
+                  },
+                  {
+                     "location" : {
+                        "lat" : 39.578699,
+                        "lng" : 2.6384438
+                     },
+                     "step_index" : 36,
+                     "step_interpolation" : 0.7332786058494488
+                  },
+                  {
+                     "location" : {
+                        "lat" : 39.5765184,
+                        "lng" : 2.6469524
+                     },
+                     "step_index" : 44,
+                     "step_interpolation" : 0.3538349304559579
+                  },
+                  {
+                     "location" : {
+                        "lat" : 39.5715009,
+                        "lng" : 2.6488919
+                     },
+                     "step_index" : 52,
+                     "step_interpolation" : 0.2521247706825759
+                  }
+               ]
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "_vopF{idOILKFS@n@dBRd@PVNt@Lj@DFPFj@F|@Lv@XMz@_@`A|AHSx@e@bB@Ld@hCBj@F~@FPdA`A^`@KR`BhAwAhCSf@e@xBQ|@OhAXYT?j@n@Pa@H[LGFBTVz@`ANH\\HzF\\ZFNJOK[G{F]]IOI{@aAUWGCMFIZm@nAWf@ABAFEBARHdCD^n@|@HP@j@@J@r@@nFTpG@NPz@@j@DnBD`B@d@A\\PnECLIJHt@n@tCFV|AgAjBvDkBwD}AfAJZYJ[Xy@t@qBnBeCzBwBpBG?KAwAWu@bCoBnGAn@PHRf@Fd@CTK^WZa@`@KQ}@q@wDeD_A}@qA_Bq@y@A_Ai@u@aByBk@z@o@lAOR_AnAuBwB_HiHc@_@J}@T{Ap@{EVsB?IHQX{@hA{D`@cBCCGKIQcAaCm@aBy@eB_BuDk@yAsAoEg@sBhBeA|EmCPGP?|BeFfBeEZYISNa@I{DQaGEsCIq@_@k@kBkBhBi@dCy@tDiAxF{FpA~A`@u@h@r@f@d@NHZ@v@?n@PLF?DB?z@BD_ERNDNLv@t@|@EN"
+         },
+         "summary" : "Muelle Indústria Pesquera",
+         "warnings" : [
+            "Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
+
+
