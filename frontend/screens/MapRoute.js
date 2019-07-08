@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text } from 'react-native';
 import styled from 'styled-components';
-import MapView, { Polyline } from 'react-native-maps';
+import MapView from 'react-native-maps';
+import Geolocation from '@react-native-community/geolocation';
 
 import { theme } from '../constants';
 
@@ -44,7 +45,7 @@ const MapRoute = ({ navigation }) => {
   });
 
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(
+    Geolocation.getCurrentPosition(
       position => {
         setLocation({
           latitude: position.coords.latitude,
