@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text } from 'react-native';
 import styled from 'styled-components';
 import MapView from 'react-native-maps';
+import Polyline from '@mapbox/polyline';
 
 import { theme } from '../constants';
 
@@ -37,6 +38,25 @@ const Unit = styled.Text`
 `;
 
 const MapRoute = ({ navigation, location }) => {
+  const [route, setRoute] = useState({
+    latitude: null,
+    longitude: null,
+    error: null,
+    concat: null,
+    coords: [],
+    x: 'false',
+    cordLatitude: -6.23,
+    cordLongitude: 106.75
+  });
+
+  fetch('../data/responseDirections.json')
+    .then(response => response.json())
+    .then(findresponse => {
+      setRoute({
+        data: findresponse
+      });
+    });
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
       <Container>
@@ -60,7 +80,49 @@ const MapRoute = ({ navigation, location }) => {
             right: 0,
             bottom: 0
           }}
-        />
+        >
+          {!!route.latitude && !!route.longitude && (
+            <MapView.Marker
+              coordinate={{
+                latitude: route.latitude,
+                longitude: route.longitude
+              }}
+              title={'Your Location'}
+            />
+          )}
+          {!!route.cordLatitude && !!route.cordLongitude && (
+            <MapView.Marker
+              coordinate={{
+                latitude: route.cordLatitude,
+                longitude: route.cordLongitude
+              }}
+              title={'Your Destination'}
+            />
+          )}
+          {!!route.latitude && !!route.longitude && route.x == 'true' && (
+            <MapView.Polyline
+              coordinates={route.coords}
+              strokeWidth={2}
+              strokeColor="red"
+            />
+          )}
+          {!!route.latitude && !!route.longitude && route.x == 'error' && (
+            <MapView.Polyline
+              coordinates={[
+                {
+                  latitude: route.latitude,
+                  longitude: route.longitude
+                },
+                {
+                  latitude: route.cordLatitude,
+                  longitude: route.cordLongitude
+                }
+              ]}
+              strokeWidth={2}
+              strokeColor="red"
+            />
+          )}
+        </MapView>
         <FixedBar bottom row center>
           <Number>
             2.7 / 5 <Unit>km</Unit>
