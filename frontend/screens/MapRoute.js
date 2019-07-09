@@ -38,23 +38,16 @@ const Unit = styled.Text`
 `;
 
 const MapRoute = ({ navigation }) => {
-  const [location, setLocation] = useState({
-    latitude: 0,
-    longitude: 0,
-    latitudeDelta: 0,
-    longitudeDelta: 0
-  });
+  const [location, setLocation] = useState({});
 
   useEffect(() => {
     Geolocation.getCurrentPosition(
       position => {
         setLocation({
-          location: {
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            latitudeDelta: 0.015,
-            longitudeDelta: 0.015
-          }
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          latitudeDelta: 0.015,
+          longitudeDelta: 0.015
         });
       },
       error => alert(error.message),
@@ -75,6 +68,12 @@ const MapRoute = ({ navigation }) => {
         <MapView
           initialRegion={location}
           showsUserLocation={true}
+          followsUserLocation={true}
+          showsMyLocationButton={false}
+          showsPointsOfInterest={false}
+          zoomEnabled={false}
+          minZoomLevel={10}
+          maxZoomLevel={10}
           style={{
             position: 'absolute',
             top: 0,
