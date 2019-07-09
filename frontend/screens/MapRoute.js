@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text } from 'react-native';
 import styled from 'styled-components';
 import MapView from 'react-native-maps';
-import Geolocation from '@react-native-community/geolocation';
 
 import { theme } from '../constants';
 
@@ -37,27 +36,7 @@ const Unit = styled.Text`
   font-weight: 400;
 `;
 
-const MapRoute = ({ navigation }) => {
-  const [location, setLocation] = useState({});
-
-  useEffect(() => {
-    Geolocation.getCurrentPosition(
-      position => {
-        setLocation({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-          latitudeDelta: 0.015,
-          longitudeDelta: 0.015
-        });
-      },
-      error => alert(error.message),
-      {
-        enableHighAccuracy: true,
-        timeout: 20000
-      }
-    );
-  });
-
+const MapRoute = ({ navigation, location }) => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
       <Container>
