@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useFetch } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text } from 'react-native';
+import axios from 'axios';
 import styled from 'styled-components';
 import MapView from 'react-native-maps';
 import Polyline from '@mapbox/polyline';
@@ -37,30 +38,20 @@ const Unit = styled.Text`
   font-weight: 400;
 `;
 
-const MapRoute = ({ navigation, location }) => {
-  // const [coords, setRoute] = useState({
-  //   coords: []
-  // });
+const MapRoute = ({ navigation }) => {
+  const [data, setData] = useState({ coords: [] });
 
-  async function useFetch() {
-    const response = await fetch('responseDirections.json');
-    const json = await response.json();
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        'http://hn.algolia.com/api/v1/search?query=redux'
+      );
 
-    return json.respJson.routes[0].overview_polyline.points;
-  }
+      setData(result.data);
+    };
 
-  var jsonDirections = useFetch();
-
-
-   //const [lospoints, setLospoints] = useFetch('../data/responseDirections.json');
-  //   let coords = points.map((point, index) => {
-  //     return {
-  //       latitude: point[0],
-  //       longitude: point[1]
-  //     };
-  //   });
-  //   setRoute(coords);
-  //   return coords;
+    fetchData();
+  }, []);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
@@ -69,7 +60,7 @@ const MapRoute = ({ navigation, location }) => {
           <Direction>Follow NE direction</Direction>
           <Distance>150m</Distance>
         </FixedBar>
-        <Unit>{JSON.stringify(jsonDirections)}</Unit>
+        <Unit>{data.coords}</Unit>
         {/* <MapView
           initialRegion={{
             latitude: 41.0082,
@@ -93,7 +84,7 @@ const MapRoute = ({ navigation, location }) => {
           }}
         >
           <MapView.Polyline
-            coordinates={coords}
+            coordinates={data.coords}
             strokeWidth={2}
             strokeColor="red"
           />
