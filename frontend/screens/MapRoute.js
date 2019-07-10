@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import MapView from 'react-native-maps';
 import Polyline from '@mapbox/polyline';
 
+import testData from '../data/testData.json'
+
 import { theme } from '../constants';
 
 import { Button, ButtonText, Container, FixedBar } from '../components';
@@ -39,19 +41,19 @@ const Unit = styled.Text`
 `;
 
 const MapRoute = ({ navigation }) => {
-  const [data, setData] = useState({ coords: [] });
+  // const [data, setData] = useState({ coords: [] });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios(
-        '../data/responseDirections.json'
-      );
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const result = await axios(
+  //       {testData}
+  //     );
 
-      setData(result.data);
-    };
+  //     setData(result.data);
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
@@ -60,7 +62,9 @@ const MapRoute = ({ navigation }) => {
           <Direction>Follow NE direction</Direction>
           <Distance>150m</Distance>
         </FixedBar>
-        <Unit>{data.coords}</Unit>
+        <Unit>
+          {testData.a}
+        </Unit>
         {/* <MapView
           initialRegion={{
             latitude: 41.0082,
