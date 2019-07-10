@@ -39,24 +39,26 @@ const Unit = styled.Text`
 
 const MapRoute = ({ navigation, location }) => {
   const [route, setRoute] = useState({
-    latitude: null,
-    longitude: null,
-    error: null,
-    concat: null,
-    coords: [],
-    x: 'false',
-    cordLatitude: -6.23,
-    cordLongitude: 106.75
+    coords: []
   });
 
-  fetch('../data/responseDirections.json')
-    .then(response => response.json())
-    .then(findresponse => {
-      setRoute({
-        data: findresponse
+  async function getDirections() {
+    try {
+      let resp = await fetch('../data/responseDirections.json');
+      let respJson = await resp.json();
+      let points = Polyline.decode(respJson.routes[0].overview_polyline.points);
+      let coords = points.map((point, index) => {
+        return {
+          latitude: point[0],
+          longitude: point[1]
+        };
       });
-    });
-
+      setRoute(coords);
+      return coords;
+    } catch (error) {
+      return error;
+    }
+  }
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
       <Container>
