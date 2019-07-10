@@ -44,7 +44,7 @@ const MapRoute = ({ navigation }) => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        'http://hn.algolia.com/api/v1/search?query=redux'
+        '../data/responseDirections.json'
       );
 
       setData(result.data);
