@@ -83,47 +83,6 @@ const MapRoute = ({ navigation, location }) => {
             bottom: 0
           }}
         >
-          {!!route.latitude && !!route.longitude && (
-            <MapView.Marker
-              coordinate={{
-                latitude: route.latitude,
-                longitude: route.longitude
-              }}
-              title={'Your Location'}
-            />
-          )}
-          {!!route.cordLatitude && !!route.cordLongitude && (
-            <MapView.Marker
-              coordinate={{
-                latitude: route.cordLatitude,
-                longitude: route.cordLongitude
-              }}
-              title={'Your Destination'}
-            />
-          )}
-          {!!route.latitude && !!route.longitude && route.x == 'true' && (
-            <MapView.Polyline
-              coordinates={route.coords}
-              strokeWidth={2}
-              strokeColor="red"
-            />
-          )}
-          {!!route.latitude && !!route.longitude && route.x == 'error' && (
-            <MapView.Polyline
-              coordinates={[
-                {
-                  latitude: route.latitude,
-                  longitude: route.longitude
-                },
-                {
-                  latitude: route.cordLatitude,
-                  longitude: route.cordLongitude
-                }
-              ]}
-              strokeWidth={2}
-              strokeColor="red"
-            />
-          )}
         </MapView>
         <FixedBar bottom row center>
           <Number>
