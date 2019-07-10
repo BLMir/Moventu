@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useFetch } from 'react';
 import { SafeAreaView, Text } from 'react-native';
 import styled from 'styled-components';
 import MapView from 'react-native-maps';
@@ -38,27 +38,30 @@ const Unit = styled.Text`
 `;
 
 const MapRoute = ({ navigation, location }) => {
-  const [route, setRoute] = useState({
-    coords: []
-  });
+  // const [coords, setRoute] = useState({
+  //   coords: []
+  // });
 
-  async function getDirections() {
-    try {
-      let resp = await fetch('../data/responseDirections.json');
-      let respJson = await resp.json();
-      let points = Polyline.decode(respJson.routes[0].overview_polyline.points);
-      let coords = points.map((point, index) => {
-        return {
-          latitude: point[0],
-          longitude: point[1]
-        };
-      });
-      setRoute(coords);
-      return coords;
-    } catch (error) {
-      return error;
-    }
+  async function useFetch() {
+    const response = await fetch('responseDirections.json');
+    const json = await response.json();
+
+    return json.respJson.routes[0].overview_polyline.points;
   }
+
+  var jsonDirections = useFetch();
+
+
+   //const [lospoints, setLospoints] = useFetch('../data/responseDirections.json');
+  //   let coords = points.map((point, index) => {
+  //     return {
+  //       latitude: point[0],
+  //       longitude: point[1]
+  //     };
+  //   });
+  //   setRoute(coords);
+  //   return coords;
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
       <Container>
@@ -66,8 +69,14 @@ const MapRoute = ({ navigation, location }) => {
           <Direction>Follow NE direction</Direction>
           <Distance>150m</Distance>
         </FixedBar>
-        <MapView
-          initialRegion={location}
+        <Unit>{JSON.stringify(jsonDirections)}</Unit>
+        {/* <MapView
+          initialRegion={{
+            latitude: 41.0082,
+            longitude: 28.9784,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421
+          }}
           showsUserLocation={true}
           followsUserLocation={true}
           showsMyLocationButton={false}
@@ -83,7 +92,12 @@ const MapRoute = ({ navigation, location }) => {
             bottom: 0
           }}
         >
-        </MapView>
+          <MapView.Polyline
+            coordinates={coords}
+            strokeWidth={2}
+            strokeColor="red"
+          />
+        </MapView> */}
         <FixedBar bottom row center>
           <Number>
             2.7 / 5 <Unit>km</Unit>
