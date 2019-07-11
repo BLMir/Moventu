@@ -1,4 +1,4 @@
-{
+[{
    "geocoded_waypoints" : [
       {
          "geocoder_status" : "OK",
@@ -1458,6 +1458,6 @@
       }
    ],
    "status" : "OK"
-}
+}]
 
 
