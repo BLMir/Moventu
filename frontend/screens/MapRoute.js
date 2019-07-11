@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import MapView from 'react-native-maps';
 import Polyline from '@mapbox/polyline';
 
-import testData from '../data/testData.json'
+import responseDirections from '../data/responseDirections.json'
 
 import { theme } from '../constants';
 
@@ -46,7 +46,7 @@ const MapRoute = ({ navigation }) => {
   // useEffect(() => {
   //   const fetchData = async () => {
   //     const result = await axios(
-  //       {testData}
+  //       {responseDirections}
   //     );
 
   //     setData(result.data);
@@ -62,13 +62,10 @@ const MapRoute = ({ navigation }) => {
           <Direction>Follow NE direction</Direction>
           <Distance>150m</Distance>
         </FixedBar>
-        <Unit>
-          {testData.a}
-        </Unit>
-        {/* <MapView
+        <MapView
           initialRegion={{
-            latitude: 41.0082,
-            longitude: 28.9784,
+            latitude: 20,
+            longitude: 20,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421
           }}
@@ -88,11 +85,11 @@ const MapRoute = ({ navigation }) => {
           }}
         >
           <MapView.Polyline
-            coordinates={data.coords}
+            coordinates={responseDirections}
             strokeWidth={2}
             strokeColor="red"
           />
-        </MapView> */}
+        </MapView>
         <FixedBar bottom row center>
           <Number>
             2.7 / 5 <Unit>km</Unit>
