@@ -41,19 +41,19 @@ const Unit = styled.Text`
 `;
 
 const MapRoute = ({ navigation }) => {
-  // const [data, setData] = useState({ coords: [] });
+  const [data, setData] = useState({ coords: [] });
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const result = await axios(
-  //       {responseDirections}
-  //     );
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        {responseDirections}
+      );
 
-  //     setData(result.data);
-  //   };
+      setData(result.data);
+    };
 
-  //   fetchData();
-  // }, []);
+    fetchData();
+  }, []);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
