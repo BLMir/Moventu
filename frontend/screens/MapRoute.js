@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text } from 'react-native';
-import axios from 'axios';
 import styled from 'styled-components';
 import MapView, { Polyline } from 'react-native-maps';
-const polyline = require('@mapbox/polyline');
 
 import responseDirections from '../data/responseDirections.json';
 
@@ -41,17 +39,15 @@ const Unit = styled.Text`
 `;
 
 const MapRoute = ({ navigation }) => {
-  const [data, setData] = useState({ coords: [] });
+  const [coords, setCoords] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios({ responseDirections });
-
-      setData(result.data);
+    const fetchData = () => {
+      const result = { responseDirections };
     };
 
-    fetchData();
-  }, []);
+    setCoords(result);
+  });
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
@@ -83,7 +79,7 @@ const MapRoute = ({ navigation }) => {
           }}
         >
           <MapView.Polyline
-            coordinates={responseDirections}
+            coordinates={coords}
             strokeWidth={2}
             strokeColor="green"
           />
