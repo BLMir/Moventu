@@ -41,22 +41,14 @@ const MapRoute = ({ navigation }) => {
 
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch('../data/responseDirections.json');
-
-      if (response.status !== 200) {
-        throw new Error('Could not fetch data');
-      }
-
-      return response;
-    };
-
-    getData(result)
-      .then(response => {
+      try {
+        const response = await fetch('../data/responseDirections.json');
+        // const data = await response.json();
         setCoords(response);
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
+      } catch (error) {
+        // console.log(`${error.name}: ${error.message}`);
+      }
+    };
   });
 
   return (
