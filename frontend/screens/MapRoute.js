@@ -3,8 +3,6 @@ import { SafeAreaView, Text } from 'react-native';
 import styled from 'styled-components';
 import MapView, { Polyline } from 'react-native-maps';
 
-import responseDirections from '../data/responseDirections.json';
-
 import { theme } from '../constants';
 
 import { Button, ButtonText, Container, FixedBar } from '../components';
@@ -42,11 +40,23 @@ const MapRoute = ({ navigation }) => {
   const [coords, setCoords] = useState([]);
 
   useEffect(() => {
-    const fetchData = () => {
-      const result = { responseDirections };
+    const getData = async () => {
+      const response = await fetch('../data/responseDirections.json');
+
+      if (response.status !== 200) {
+        throw new Error('Could not fetch data');
+      }
+
+      return response;
     };
 
-    setCoords(result);
+    getData(result)
+      .then(response => {
+        setCoords(response);
+      })
+      .catch(error => {
+        console.log(error.message);
+      });
   });
 
   return (
