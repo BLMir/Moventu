@@ -7,6 +7,8 @@ import { theme } from '../constants';
 
 import { Button, ButtonText, Container, FixedBar } from '../components';
 
+import responseDirections from '../data/responseDirections.json';
+
 const Direction = styled.Text`
   font-size: ${theme.size.m};
   font-weight: 700;
@@ -37,19 +39,21 @@ const Unit = styled.Text`
 `;
 
 const MapRoute = ({ navigation }) => {
-  const [coords, setCoords] = useState([]);
+  // const [coords, setCoords] = useState('');
 
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const response = await fetch('../data/responseDirections.json');
-        // const data = await response.json();
-        setCoords(response);
-      } catch (error) {
-        // console.log(`${error.name}: ${error.message}`);
-      }
-    };
-  });
+  // useEffect(() => {
+  //   async () => {
+  //     try {
+  //       const response = await fetch('../data/responseDirections.json');
+  //       const data = JSON.stringify(response); // FOR TESTING
+  //       setCoords(data);
+  //     } catch (error) {
+  //       // console.log(`${error.name}: ${error.message}`);
+  //     }
+  //   };
+  // });
+
+  const coords = JSON.stringify(responseDirections); // FOR TESTING
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
@@ -58,7 +62,7 @@ const MapRoute = ({ navigation }) => {
           <Direction>Follow NE direction</Direction>
           <Distance>150m</Distance>
         </FixedBar>
-        <MapView
+        {/* <MapView
           initialRegion={{
             latitude: 20,
             longitude: 20,
@@ -81,11 +85,12 @@ const MapRoute = ({ navigation }) => {
           }}
         >
           <MapView.Polyline
-            coordinates={coords}
+            coordinates={responseDirections}
             strokeWidth={2}
             strokeColor="green"
           />
-        </MapView>
+        </MapView> */}
+        <Text style={{ marginTop: 100, color: 'white' }}>{coords}</Text>
         <FixedBar bottom row center>
           <Number>
             2.7 / 5 <Unit>km</Unit>
