@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text } from 'react-native';
 import styled from 'styled-components';
-import MapView, { Polyline } from 'react-native-maps';
+import MapView from 'react-native-maps';
+var polyline = require('@mapbox/polyline');
 
 import { theme } from '../constants';
 
@@ -39,21 +40,17 @@ const Unit = styled.Text`
 `;
 
 const MapRoute = ({ navigation }) => {
-  // const [coords, setCoords] = useState('');
+  const data = responseDirections[0].routes[0].overview_polyline.points;
+  const points = polyline.decode(data);
 
-  // useEffect(() => {
-  //   async () => {
-  //     try {
-  //       const response = await fetch('../data/responseDirections.json');
-  //       const data = JSON.stringify(response); // FOR TESTING
-  //       setCoords(data);
-  //     } catch (error) {
-  //       // console.log(`${error.name}: ${error.message}`);
-  //     }
-  //   };
-  // });
+  const coords = points.map((point) => {
+    return {
+      latitude: point[0],
+      longitude: point[1]
+    };
+  });
 
-  const coords = JSON.stringify(responseDirections); // FOR TESTING
+  const testCoords = JSON.stringify(coords);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
@@ -62,20 +59,20 @@ const MapRoute = ({ navigation }) => {
           <Direction>Follow NE direction</Direction>
           <Distance>150m</Distance>
         </FixedBar>
-        {/* <MapView
+        <MapView
           initialRegion={{
-            latitude: 20,
-            longitude: 20,
+            latitude: coords[0].latitude,
+            longitude: coords[0].longitude,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421
           }}
           showsUserLocation={true}
           followsUserLocation={true}
-          showsMyLocationButton={false}
+          showsMyLocationButton={true}
           showsPointsOfInterest={false}
           zoomEnabled={false}
-          minZoomLevel={10}
-          maxZoomLevel={10}
+          minZoomLevel={50}
+          maxZoomLevel={50}
           style={{
             position: 'absolute',
             top: 0,
@@ -85,12 +82,12 @@ const MapRoute = ({ navigation }) => {
           }}
         >
           <MapView.Polyline
-            coordinates={responseDirections}
+            coordinates={coords}
             strokeWidth={2}
             strokeColor="green"
           />
-        </MapView> */}
-        <Text style={{ marginTop: 100, color: 'white' }}>{coords}</Text>
+        </MapView>
+        {/* <Text style={{ marginTop: 100, color: 'white' }}>{testCoords}</Text> */}
         <FixedBar bottom row center>
           <Number>
             2.7 / 5 <Unit>km</Unit>
