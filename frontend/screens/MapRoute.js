@@ -50,8 +50,6 @@ const MapRoute = ({ navigation }) => {
     };
   });
 
-  const testCoords = JSON.stringify(coords);
-
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
       <Container>
@@ -87,7 +85,6 @@ const MapRoute = ({ navigation }) => {
             strokeColor="green"
           />
         </MapView>
-        {/* <Text style={{ marginTop: 100, color: 'white' }}>{testCoords}</Text> */}
         <FixedBar bottom row center>
           <Number>
             2.7 / 5 <Unit>km</Unit>
