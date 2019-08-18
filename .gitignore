@@ -91,3 +91,4 @@ frontend/build/index.html
 frontend/build/asset-manifest.json
 frontend/build/precache-manifest.8ece4e8796ecdc1cb205a2f626544a8a.js
 frontend/build/service-worker.js
+frontend/android/app/src/main/AndroidManifest.xml
