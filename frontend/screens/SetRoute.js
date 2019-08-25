@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SafeAreaView } from 'react-native';
+import Geolocation from 'react-native-geolocation-service';
 
 import { theme } from '../constants';
 
@@ -14,6 +15,21 @@ import {
 
 const SetRoute = ({ navigation }) => {
   const [distance, setDistance] = useState(0);
+  const [position, setPosition] = useState([]);
+
+  useEffect(() => {
+    if (hasLocationPermission) {
+      Geolocation.getCurrentPosition(
+        (position) => {
+          setPosition(position);
+        },
+        (error) => {
+          throw error;
+        },
+        { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
+      );
+    }
+  });
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
@@ -28,7 +44,7 @@ const SetRoute = ({ navigation }) => {
         <Slider
           value={distance}
           style={{ width: '90%', marginBottom: theme.space.m }}
-          onValueChange={value => setDistance(value)}
+          onValueChange={(value) => setDistance(value)}
         />
         <Button primary onPress={() => navigation.navigate('MapRoute')}>
           <ButtonText large bold>
