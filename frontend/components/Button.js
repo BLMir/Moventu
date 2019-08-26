@@ -9,7 +9,7 @@ export default styled.TouchableOpacity`
   width: 300;
   height: 60;
   border-radius: ${theme.radius.normal};
-  background-color: ${props =>
+  background-color: ${(props) =>
     props.primary ? theme.color.accent : theme.color.transparent};
-  margin-bottom: ${props => (props.primary ? theme.space.m : theme.space.xs)};
+  margin-bottom: ${(props) => (props.primary ? theme.space.m : theme.space.xs)};
 `;
