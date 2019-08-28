@@ -24,7 +24,12 @@ const SetRoute = ({ navigation }) => {
         setLocation(location);
       },
       (error) => Alert.alert(error.message),
-      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
+      {
+        enableHighAccuracy: true,
+        timeout: 20000,
+        maximumAge: 1000,
+        forceRequestLocation: true
+      }
     );
   });
 
