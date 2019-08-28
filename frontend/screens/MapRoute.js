@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { SafeAreaView, Text } from 'react-native';
 import styled from 'styled-components';
-import MapView from 'react-native-maps';
-var polyline = require('@mapbox/polyline');
+import MapView, { Marker } from 'react-native-maps';
+import polyline from '@mapbox/polyline';
+import Geolocation from 'react-native-geolocation-service';
 
 import { theme } from '../constants';
 
@@ -50,6 +51,21 @@ const MapRoute = ({ navigation }) => {
     };
   });
 
+  const [location, setLocation] = useState({
+    latitude: 0,
+    longitude: 0
+  });
+
+  useEffect(() => {
+    Geolocation.getCurrentPosition(
+      (position) => {
+        setLocation(position);
+      },
+      (error) => Alert.alert(error.message),
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
+    );
+  });
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
       <Container>
@@ -84,6 +100,12 @@ const MapRoute = ({ navigation }) => {
             strokeWidth={2}
             strokeColor="green"
           />
+          {/* <MapView.Marker
+            coordinate={{
+              latitude: location.latitude,
+              longitude: location.longitude
+            }}
+          /> */}
         </MapView>
         <FixedBar bottom row center>
           <Number>
