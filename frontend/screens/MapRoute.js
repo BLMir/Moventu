@@ -44,7 +44,7 @@ const MapRoute = ({ navigation }) => {
   const data = responseDirections[0].routes[0].overview_polyline.points;
   const points = polyline.decode(data);
 
-  const coords = points.map((point) => {
+  const route = points.map((point) => {
     return {
       latitude: point[0],
       longitude: point[1]
@@ -52,19 +52,30 @@ const MapRoute = ({ navigation }) => {
   });
 
   const [location, setLocation] = useState({
-    latitude: 0,
-    longitude: 0
+    latitude: 39.587857,
+    longitude: 2.650178,
+    latitudeDelta: 0.0922,
+    longitudeDelta: 0.0421
   });
 
-  useEffect(() => {
+  const getCurrentLocation = () => {
     Geolocation.getCurrentPosition(
       (position) => {
-        setLocation(position);
+        setLocation({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421
+        });
       },
       (error) => Alert.alert(error.message),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
     );
-  });
+  };
+
+  // useEffect(() => {
+  //   getCurrentLocation();
+  // });
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
@@ -74,16 +85,15 @@ const MapRoute = ({ navigation }) => {
           <Distance>150m</Distance>
         </FixedBar>
         <MapView
-          initialRegion={{
-            latitude: coords[0].latitude,
-            longitude: coords[0].longitude,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421
-          }}
+          initialRegion={location}
           showsUserLocation={true}
           followsUserLocation={true}
-          showsMyLocationButton={true}
           showsPointsOfInterest={false}
+          showsBuildings={false}
+          showsTraffic={false}
+          showsIndoors={false}
+          toolbarEnabled={false}
+          loadingEnabled={true}
           zoomEnabled={false}
           minZoomLevel={50}
           maxZoomLevel={50}
@@ -96,16 +106,11 @@ const MapRoute = ({ navigation }) => {
           }}
         >
           <MapView.Polyline
-            coordinates={coords}
+            coordinates={route}
             strokeWidth={2}
             strokeColor="green"
           />
-          {/* <MapView.Marker
-            coordinate={{
-              latitude: location.latitude,
-              longitude: location.longitude
-            }}
-          /> */}
+          <Marker coordinate={location} />
         </MapView>
         <FixedBar bottom row center>
           <Number>
