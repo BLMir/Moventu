@@ -67,9 +67,9 @@ export const MapRoute = ({ navigation }) => {
           showsIndoors={false}
           toolbarEnabled={false}
           loadingEnabled={true}
-          zoomEnabled={true}
-          minZoomLevel={18}
-          maxZoomLevel={18}
+          zoomEnabled={false}
+          minZoomLevel={60}
+          maxZoomLevel={60}
           style={{
             position: 'absolute',
             top: 0,
