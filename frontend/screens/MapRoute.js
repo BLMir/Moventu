@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView, Text } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
+import { Alert, SafeAreaView, Text } from 'react-native';
+import MapView from 'react-native-maps';
 import polyline from '@mapbox/polyline';
 import Geolocation from 'react-native-geolocation-service';
 
@@ -17,7 +17,7 @@ import { ButtonText, Container, FixedBar } from '../components';
 
 import responseDirections from '../data/responseDirections.json';
 
-const MapRoute = ({ navigation }) => {
+export const MapRoute = ({ navigation }) => {
   const data = responseDirections[0].routes[0].overview_polyline.points;
   const points = polyline.decode(data);
 
@@ -29,30 +29,28 @@ const MapRoute = ({ navigation }) => {
   });
 
   const [location, setLocation] = useState({
-    latitude: 39.587857,
-    longitude: 2.650178,
-    latitudeDelta: 0.0922,
-    longitudeDelta: 0.0421
+    latitude: route[0].latitude,
+    longitude: route[0].longitude,
+    latitudeDelta: 0.003,
+    longitudeDelta: 0.003
   });
 
-  const getCurrentLocation = () => {
+  const getCurrentLocation = () => {};
+
+  useEffect(() => {
     Geolocation.getCurrentPosition(
       (position) => {
         setLocation({
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421
+          latitudeDelta: 0.003,
+          longitudeDelta: 0.003
         });
       },
       (error) => Alert.alert(error.message),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
     );
-  };
-
-  // useEffect(() => {
-  //   getCurrentLocation();
-  // });
+  }, []);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
@@ -71,9 +69,9 @@ const MapRoute = ({ navigation }) => {
           showsIndoors={false}
           toolbarEnabled={false}
           loadingEnabled={true}
-          zoomEnabled={false}
-          minZoomLevel={50}
-          maxZoomLevel={50}
+          zoomEnabled={true}
+          minZoomLevel={18}
+          maxZoomLevel={18}
           style={{
             position: 'absolute',
             top: 0,
@@ -87,7 +85,6 @@ const MapRoute = ({ navigation }) => {
             strokeWidth={2}
             strokeColor="green"
           />
-          <Marker coordinate={location} />
         </MapView>
         <FixedBar bottom row center>
           <Number>
@@ -108,5 +105,3 @@ const MapRoute = ({ navigation }) => {
 MapRoute.navigationOptions = {
   header: null
 };
-
-export default MapRoute;

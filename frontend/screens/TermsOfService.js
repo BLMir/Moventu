@@ -12,7 +12,7 @@ import {
   ScreenText
 } from '../components';
 
-const TermsOfService = ({ navigation }) => (
+export const TermsOfService = ({ navigation }) => (
   <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
     <Container>
       <FixedBar top left>
@@ -36,5 +36,3 @@ const TermsOfService = ({ navigation }) => (
 TermsOfService.navigationOptions = {
   header: null
 };
-
-export default TermsOfService;

@@ -13,7 +13,7 @@ import {
   Slider
 } from '../components';
 
-const SetRoute = ({ navigation }) => {
+export const SetRoute = ({ navigation }) => {
   const [distance, setDistance] = useState(0);
   const [location, setLocation] = useState(null);
 
@@ -62,5 +62,3 @@ const SetRoute = ({ navigation }) => {
 SetRoute.navigationOptions = {
   header: null
 };
-
-export default SetRoute;

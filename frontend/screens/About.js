@@ -12,7 +12,7 @@ import {
   ScreenText
 } from '../components';
 
-const About = ({ navigation }) => (
+export const About = ({ navigation }) => (
   <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
     <Container>
       <FixedBar top left>
@@ -40,5 +40,3 @@ const About = ({ navigation }) => (
 About.navigationOptions = {
   header: null
 };
-
-export default About;
