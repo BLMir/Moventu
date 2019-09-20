@@ -28,7 +28,7 @@ const DEFAULT_ANIMATION_CONFIGS = {
   }
 };
 
-export default class Slider extends PureComponent {
+export class Slider extends PureComponent {
   static propTypes = {
     value: PropTypes.number,
     disabled: PropTypes.bool,

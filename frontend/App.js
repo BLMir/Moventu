@@ -1,12 +1,9 @@
 import React from 'react';
 import { Image } from 'react-native';
-import { createAppContainer, createStackNavigator } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-import Welcome from './screens/Welcome';
-import About from './screens/About';
-import TermsOfService from './screens/TermsOfService';
-import SetRoute from './screens/SetRoute';
-import MapRoute from './screens/MapRoute';
+import { About, MapRoute, SetRoute, TermsOfService, Welcome } from './screens';
 
 const screens = createStackNavigator(
   {

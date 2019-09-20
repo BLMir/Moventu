@@ -19,7 +19,7 @@ const Slogan = styled.Text`
   margin-bottom: ${theme.space.xl};
 `;
 
-const Welcome = ({ navigation }) => (
+export const Welcome = ({ navigation }) => (
   <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
     <Container>
       <Logo>Moventu</Logo>
@@ -42,5 +42,3 @@ const Welcome = ({ navigation }) => (
 Welcome.navigationOptions = {
   header: null
 };
-
-export default Welcome;

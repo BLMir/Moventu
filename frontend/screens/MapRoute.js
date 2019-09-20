@@ -1,46 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView, Text } from 'react-native';
-import styled from 'styled-components';
-import MapView, { Marker } from 'react-native-maps';
+import { Alert, SafeAreaView, Text } from 'react-native';
+import MapView from 'react-native-maps';
 import polyline from '@mapbox/polyline';
 import Geolocation from 'react-native-geolocation-service';
 
 import { theme } from '../constants';
 
-import { Button, ButtonText, Container, FixedBar } from '../components';
+import {
+  ButtonStop,
+  Direction,
+  Distance,
+  Number,
+  Unit
+} from './MapRoute.styles';
+import { ButtonText, Container, FixedBar } from '../components';
 
 import responseDirections from '../data/responseDirections.json';
 
-const Direction = styled.Text`
-  font-size: ${theme.size.m};
-  font-weight: 700;
-  color: ${theme.color.lighter};
-`;
-
-const Distance = styled.Text`
-  font-size: ${theme.size.s};
-  color: ${theme.color.light};
-`;
-
-const ButtonStop = styled(Button)`
-  background-color: hsl(360, 81%, 45%);
-  width: 100;
-  height: 44;
-`;
-
-const Number = styled.Text`
-  font-weight: 700;
-  font-size: ${theme.size.m};
-  color: ${theme.color.lighter};
-`;
-
-const Unit = styled.Text`
-  color: ${theme.color.light};
-  font-size: ${theme.size.s};
-  font-weight: 400;
-`;
-
-const MapRoute = ({ navigation }) => {
+export const MapRoute = ({ navigation }) => {
   const data = responseDirections[0].routes[0].overview_polyline.points;
   const points = polyline.decode(data);
 
@@ -52,30 +29,28 @@ const MapRoute = ({ navigation }) => {
   });
 
   const [location, setLocation] = useState({
-    latitude: 39.587857,
-    longitude: 2.650178,
-    latitudeDelta: 0.0922,
-    longitudeDelta: 0.0421
+    latitude: route[0].latitude,
+    longitude: route[0].longitude,
+    latitudeDelta: 0.003,
+    longitudeDelta: 0.003
   });
 
-  const getCurrentLocation = () => {
+  const getCurrentLocation = () => {};
+
+  useEffect(() => {
     Geolocation.getCurrentPosition(
       (position) => {
         setLocation({
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421
+          latitudeDelta: 0.003,
+          longitudeDelta: 0.003
         });
       },
       (error) => Alert.alert(error.message),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
     );
-  };
-
-  // useEffect(() => {
-  //   getCurrentLocation();
-  // });
+  }, []);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.color.dark }}>
@@ -95,6 +70,8 @@ const MapRoute = ({ navigation }) => {
           toolbarEnabled={false}
           loadingEnabled={true}
           zoomEnabled={true}
+          minZoomLevel={18}
+          maxZoomLevel={18}
           style={{
             position: 'absolute',
             top: 0,
@@ -108,7 +85,6 @@ const MapRoute = ({ navigation }) => {
             strokeWidth={2}
             strokeColor="green"
           />
-          <Marker coordinate={location} />
         </MapView>
         <FixedBar bottom row center>
           <Number>
@@ -129,5 +105,3 @@ const MapRoute = ({ navigation }) => {
 MapRoute.navigationOptions = {
   header: null
 };
-
-export default MapRoute;

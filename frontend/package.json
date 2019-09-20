@@ -11,17 +11,18 @@
     "@mapbox/polyline": "^1.1.0",
     "react": "16.9.0",
     "react-native": "0.60.5",
-    "react-native-geolocation-service": "^3.0.0",
+    "react-native-geolocation-service": "^3.1.0",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-maps": "^0.25.0",
-    "react-navigation": "^3.12.1",
+    "react-navigation": "^4.0.6",
+    "react-navigation-stack": "^1.8.0",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/runtime": "^7.5.5",
+    "@babel/core": "^7.6.0",
+    "@babel/runtime": "^7.6.0",
     "@react-native-community/eslint-config": "^0.0.5",
-    "eslint": "^6.2.2",
+    "eslint": "^6.4.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "react-test-renderer": "16.9.0"
   }

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { theme } from '../constants';
 
-export default styled.TouchableOpacity`
+export const Button = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   width: 300;
