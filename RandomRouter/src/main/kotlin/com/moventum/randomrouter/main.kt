@@ -16,7 +16,7 @@ fun main() {
         .addService(RandomRouterServiceGrpcImpl(generateRouteService))
         .build()
 
-    logger.info { "Grpc endpoint listen port ${config[serverPort]}" }
+    logger.info { "Grpc end point listen port ${config[serverPort]}" }
     server.start()
     server.awaitTermination()
 }
