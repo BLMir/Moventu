@@ -35,8 +35,6 @@ export const MapRoute = ({ navigation }) => {
     longitudeDelta: 0.003
   });
 
-  const getCurrentLocation = () => {};
-
   useEffect(() => {
     Geolocation.getCurrentPosition(
       (position) => {
