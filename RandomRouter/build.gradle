@@ -26,7 +26,7 @@ buildscript {
     }
 }
 
-mainClassName = 'com.moventum.randomrouter.MainKt'
+mainClassName = 'com.moventum.randomrouter.WebServerKt'
 
 dependencies {
     compile 'com.google.protobuf:protobuf-java:3.0.0'
