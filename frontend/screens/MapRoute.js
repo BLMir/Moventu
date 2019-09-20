@@ -1,44 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, Text } from 'react-native';
-import styled from 'styled-components';
 import MapView, { Marker } from 'react-native-maps';
 import polyline from '@mapbox/polyline';
 import Geolocation from 'react-native-geolocation-service';
 
 import { theme } from '../constants';
 
-import { Button, ButtonText, Container, FixedBar } from '../components';
+import {
+  ButtonStop,
+  Direction,
+  Distance,
+  Number,
+  Unit
+} from './MapRoute.styles';
+import { ButtonText, Container, FixedBar } from '../components';
 
 import responseDirections from '../data/responseDirections.json';
-
-const Direction = styled.Text`
-  font-size: ${theme.size.m};
-  font-weight: 700;
-  color: ${theme.color.lighter};
-`;
-
-const Distance = styled.Text`
-  font-size: ${theme.size.s};
-  color: ${theme.color.light};
-`;
-
-const ButtonStop = styled(Button)`
-  background-color: hsl(360, 81%, 45%);
-  width: 100;
-  height: 44;
-`;
-
-const Number = styled.Text`
-  font-weight: 700;
-  font-size: ${theme.size.m};
-  color: ${theme.color.lighter};
-`;
-
-const Unit = styled.Text`
-  color: ${theme.color.light};
-  font-size: ${theme.size.s};
-  font-weight: 400;
-`;
 
 const MapRoute = ({ navigation }) => {
   const data = responseDirections[0].routes[0].overview_polyline.points;
