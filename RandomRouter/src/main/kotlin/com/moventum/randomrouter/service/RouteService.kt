@@ -37,7 +37,7 @@ class RouteService {
 
         return Route.newBuilder()
             .setDistance(jsonResponse.route.leg.distance.text)
-            .setMap("$staticMapUrl${jsonResponse.route.overview_polyline.points.replace("\\\\","\\")}&key=${config[googleStaticApi]}")
+            .setMap(jsonResponse.route.overview_polyline.points.replace("\\\\","\\"))
             .setDuration(jsonResponse.route.leg.duration.text)
             .build()
 

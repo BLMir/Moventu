@@ -94,9 +94,7 @@ const MapRoute = ({ navigation }) => {
           showsIndoors={false}
           toolbarEnabled={false}
           loadingEnabled={true}
-          zoomEnabled={false}
-          minZoomLevel={50}
-          maxZoomLevel={50}
+          zoomEnabled={true}
           style={{
             position: 'absolute',
             top: 0,
