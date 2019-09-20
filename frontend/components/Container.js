@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { theme } from '../constants';
 
-export default styled.View`
+export const Container = styled.View`
   display: flex;
   flex-grow: 1;
   background-color: ${theme.color.dark};

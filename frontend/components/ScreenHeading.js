@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { theme } from '../constants';
 
-export default styled.Text`
+export const ScreenHeading = styled.Text`
   color: ${theme.color.lighter};
   font-size: ${theme.size.l};
   font-weight: bold;

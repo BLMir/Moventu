@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { theme } from '../constants';
 
-export default styled.View`
+export const FixedBar = styled.View`
   flex: 1;
   width: 100%;
   justify-content: ${(props) => (props.left ? 'flex-start' : 'space-between')};
